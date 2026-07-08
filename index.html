@@ -18,13 +18,23 @@
     <section class="card target" aria-labelledby="target-title">
       <div>
         <p class="eyebrow">Today’s grid fingerprint</p>
-        <h2 id="target-title">Electricity mix</h2>
+        <h2 id="target-title">Mystery electricity mix</h2>
+        <p class="mini-copy">A cleaner fingerprint: stacked source DNA, top ingredients, and exact bars tucked away if you want to nerd-snipe yourself.</p>
       </div>
       <div id="mix-chart" class="mix-chart" aria-label="Target electricity mix"></div>
       <p id="source-note" class="source-note"></p>
     </section>
 
     <section class="card controls" aria-label="Guess controls">
+      <div class="mode-row">
+        <label for="tier-select">Tier</label>
+        <select id="tier-select">
+          <option value="all">Daily mix</option>
+          <option value="easy">Easy — famous grids</option>
+          <option value="surprise">Surprise me — obscure grids</option>
+        </select>
+      </div>
+      <p id="tier-note" class="tier-note"></p>
       <label for="guess-input">Country guess</label>
       <div class="guess-row">
         <input id="guess-input" list="country-list" autocomplete="off" placeholder="e.g. Japan" />
@@ -32,6 +42,12 @@
       </div>
       <datalist id="country-list"></datalist>
       <p id="message" class="message">Six guesses. Lower mix-distance is better.</p>
+    </section>
+
+    <section id="answer-card" class="card answer" hidden>
+      <p class="eyebrow">Answer reveal</p>
+      <h2 id="answer-title"></h2>
+      <p id="answer-context"></p>
     </section>
 
     <section class="grid">
@@ -58,6 +74,6 @@
     </footer>
   </main>
   <script src="src/energy_mix_data.js"></script>
-  <script src="src/app.js"></script>
+  <script type="module" src="src/app.js"></script>
 </body>
 </html>

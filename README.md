@@ -1,9 +1,15 @@
 # GridGuessr — Country Energy Mix Wordle
 
-A static browser game: guess the hidden country from its latest electricity generation mix. Wrong guesses unlock two hint layers:
+A static browser game: guess the hidden country from its latest electricity generation mix. Wrong guesses unlock two hint layers, and the reveal gives a short story about why the grid looks that way.
 
-1. **Geographic hinting** — distance, direction, region, and subregion proximity.
+1. **Geographic hinting** — compass arrow, direction, distance, region, and subregion proximity.
 2. **Energy-mix difference hinting** — percentage-point differences by electricity source versus the hidden country.
+
+Game modes:
+
+- **Daily mix** — the full country pool.
+- **Easy** — familiar/high-generation countries that are easier to reason about.
+- **Surprise me** — smaller, weirder-to-guess grids for energy nerd chaos.
 
 ## Data
 
@@ -24,6 +30,7 @@ python3 -m http.server 8000
 ```bash
 python3 scripts/build_data.py
 node tests/validate_data.mjs
+node tests/game_logic.mjs
 python3 -m http.server 8000
 ```
 
