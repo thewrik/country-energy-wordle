@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GridGuessr — Energy Mix Wordle</title>
+  <meta name="description" content="Guess the country from its latest electricity generation mix. Wordle-style geography and energy-difference hints." />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">Energy mix wordle</p>
+      <h1>GridGuessr</h1>
+      <p class="lede">Guess the country from its latest electricity generation mix. Each wrong guess unlocks geographic hints and an energy-mix difference readout.</p>
+    </header>
+
+    <section class="card target" aria-labelledby="target-title">
+      <div>
+        <p class="eyebrow">Today’s grid fingerprint</p>
+        <h2 id="target-title">Electricity mix</h2>
+      </div>
+      <div id="mix-chart" class="mix-chart" aria-label="Target electricity mix"></div>
+      <p id="source-note" class="source-note"></p>
+    </section>
+
+    <section class="card controls" aria-label="Guess controls">
+      <label for="guess-input">Country guess</label>
+      <div class="guess-row">
+        <input id="guess-input" list="country-list" autocomplete="off" placeholder="e.g. Japan" />
+        <button id="guess-button">Guess</button>
+      </div>
+      <datalist id="country-list"></datalist>
+      <p id="message" class="message">Six guesses. Lower mix-distance is better.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Guesses</h2>
+        <div id="guess-board" class="guess-board"></div>
+      </article>
+      <article class="card hints">
+        <h2>Hints</h2>
+        <div class="hint-block">
+          <h3>1. Geographic</h3>
+          <p id="geo-hint">Make a guess to reveal distance, direction, region, and subregion proximity.</p>
+        </div>
+        <div class="hint-block">
+          <h3>2. Energy mix difference</h3>
+          <p id="mix-hint">After each guess, see which sources are too high or too low versus the target.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <button id="new-game" class="secondary">New country</button>
+      <a href="https://github.com/owid/energy-data" target="_blank" rel="noreferrer">Data: OWID energy dataset</a>
+    </footer>
+  </main>
+  <script src="src/energy_mix_data.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

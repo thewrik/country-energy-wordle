@@ -1,0 +1,98 @@
+const DATA = window.ENERGY_MIX_DATA;
+const CATS = DATA.categories;
+const LABELS = { coal: "Coal", gas: "Gas", oil: "Oil", nuclear: "Nuclear", hydro: "Hydro", wind: "Wind", solar: "Solar", biofuel: "Biofuel", otherRenewables: "Other renewables" };
+const MAX_GUESSES = 6;
+let target, guesses, finished;
+
+const $ = (id) => document.getElementById(id);
+const norm = (s) => String(s || "").trim().toLowerCase();
+const km = (n) => `${Math.round(n).toLocaleString()} km`;
+
+function seedIndex() {
+  const d = new Date();
+  const key = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()) / 86400000;
+  return Math.abs(Math.floor(Math.sin(key) * 1000000)) % DATA.countries.length;
+}
+function cssName(cat) { return getComputedStyle(document.documentElement).getPropertyValue(`--${cat}`).trim(); }
+function distanceKm(a, b) {
+  const R = 6371, toRad = x => x * Math.PI / 180;
+  const dLat = toRad(b.lat - a.lat), dLng = toRad(b.lng - a.lng);
+  const la1 = toRad(a.lat), la2 = toRad(b.lat);
+  const h = Math.sin(dLat/2)**2 + Math.cos(la1)*Math.cos(la2)*Math.sin(dLng/2)**2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
+function direction(from, to) {
+  const ns = to.lat > from.lat + 2 ? "north" : to.lat < from.lat - 2 ? "south" : "";
+  const ew = to.lng > from.lng + 2 ? "east" : to.lng < from.lng - 2 ? "west" : "";
+  return [ns, ew].filter(Boolean).join("-") || "nearby";
+}
+function mixDistance(a, b) {
+  return CATS.reduce((sum, c) => sum + Math.abs(a.mix[c] - b.mix[c]), 0) / 2;
+}
+function similarityBadge(d) {
+  if (d <= 10) return ["Excellent", "good"];
+  if (d <= 22) return ["Close", "good"];
+  if (d <= 38) return ["Warm", "mid"];
+  return ["Cold", "bad"];
+}
+function renderMixChart() {
+  $("mix-chart").innerHTML = CATS.map(c => `
+    <div class="bar">
+      <span>${LABELS[c]}</span>
+      <span class="bar-track"><span class="bar-fill" style="width:${target.mix[c]}%;background:${cssName(c)}"></span></span>
+      <b>${target.mix[c].toFixed(1)}%</b>
+    </div>`).join("");
+  $("source-note").textContent = `Latest available standardized electricity data: ${target.year}; ${target.generationTwh.toLocaleString()} TWh generation. Country hidden until solved.`;
+}
+function renderBoard() {
+  $("guess-board").innerHTML = guesses.map((g, i) => {
+    const d = mixDistance(g, target);
+    const [txt, cls] = similarityBadge(d);
+    const geo = distanceKm(g, target);
+    return `<div class="guess"><strong>${i + 1}. ${g.name}</strong><span>${g.region}</span><span>${km(geo)}</span><span class="badge ${cls}">${txt} · ${d.toFixed(1)} pts</span></div>`;
+  }).join("") || `<p class="message">No guesses yet.</p>`;
+}
+function renderHints(last) {
+  if (!last) return;
+  const d = distanceKm(last, target);
+  const sameRegion = last.region === target.region;
+  const sameSub = last.subregion === target.subregion;
+  $("geo-hint").innerHTML = `Target is <b>${km(d)}</b> ${direction(last, target)} of ${last.name}. Region: <b>${sameRegion ? "same" : "different"}</b>. Subregion: <b>${sameSub ? "same" : target.subregion}</b>.`;
+  const deltas = CATS.map(c => ({ cat: c, delta: +(target.mix[c] - last.mix[c]).toFixed(1) })).sort((a,b) => Math.abs(b.delta)-Math.abs(a.delta)).slice(0,5);
+  $("mix-hint").innerHTML = `Compared with ${last.name}, target needs:<div class="delta-list">` + deltas.map(x => `<span class="delta"><b>${LABELS[x.cat]}</b><span>${x.delta > 0 ? "+" : ""}${x.delta.toFixed(1)} pp</span></span>`).join("") + `</div>`;
+}
+function end(win) {
+  finished = true;
+  $("message").innerHTML = win ? `✅ Correct: <b>${target.name}</b>.` : `❌ Out of guesses. It was <b>${target.name}</b>.`;
+  $("guess-button").disabled = true;
+  $("guess-input").disabled = true;
+}
+function submitGuess() {
+  if (finished) return;
+  const v = norm($("guess-input").value);
+  const guess = DATA.countries.find(c => norm(c.name) === v || norm(c.iso) === v || norm(c.restName) === v);
+  if (!guess) { $("message").textContent = "Pick a country from the list."; return; }
+  if (guesses.some(g => g.iso === guess.iso)) { $("message").textContent = "Already guessed."; return; }
+  guesses.push(guess); $("guess-input").value = "";
+  renderBoard(); renderHints(guess);
+  if (guess.iso === target.iso) return end(true);
+  if (guesses.length >= MAX_GUESSES) return end(false);
+  $("message").textContent = `${MAX_GUESSES - guesses.length} guesses left.`;
+}
+function start(random = false) {
+  target = DATA.countries[random ? Math.floor(Math.random() * DATA.countries.length) : seedIndex()];
+  guesses = []; finished = false;
+  $("guess-button").disabled = false; $("guess-input").disabled = false;
+  $("message").textContent = "Six guesses. Lower mix-distance is better.";
+  $("geo-hint").textContent = "Make a guess to reveal distance, direction, region, and subregion proximity.";
+  $("mix-hint").textContent = "After each guess, see which sources are too high or too low versus the target.";
+  renderMixChart(); renderBoard();
+}
+function init() {
+  $("country-list").innerHTML = DATA.countries.map(c => `<option value="${c.name}"></option>`).join("");
+  $("guess-button").addEventListener("click", submitGuess);
+  $("guess-input").addEventListener("keydown", e => { if (e.key === "Enter") submitGuess(); });
+  $("new-game").addEventListener("click", () => start(true));
+  start(false);
+}
+init();
