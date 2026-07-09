@@ -5,6 +5,7 @@ import csv
 import io
 import json
 import math
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -45,6 +46,24 @@ def f(value: str | None) -> float | None:
     return x
 
 
+def cached_payload() -> dict | None:
+    if not OUT.exists():
+        return None
+    text = OUT.read_text()
+    prefix = "window.ENERGY_MIX_DATA = "
+    if not text.startswith(prefix):
+        return None
+    return json.loads(text[len(prefix):].rstrip().rstrip(";"))
+
+
+def write_payload(payload: dict, note: str = "wrote") -> None:
+    OUT.write_text("window.ENERGY_MIX_DATA = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n")
+    RAW_OUT.write_text(json.dumps(payload["source"], indent=2) + "\n")
+    data = payload["countries"]
+    years = sorted({d["year"] for d in data})
+    print(f"{note} {OUT.relative_to(OUT.parents[1])}: {len(data)} countries, latest years {years[-5:]} generatedAt={payload['generatedAt']}")
+
+
 def clean_mix(row: dict[str, str]) -> dict[str, float] | None:
     mix = {k: max(0.0, f(row.get(col)) or 0.0) for k, col in MIX_COLUMNS.items()}
     total = sum(mix.values())
@@ -59,7 +78,17 @@ def clean_mix(row: dict[str, str]) -> dict[str, float] | None:
 
 
 def main() -> None:
-    countries = json.loads(fetch_text(COUNTRIES_URL))
+    try:
+        countries = json.loads(fetch_text(COUNTRIES_URL))
+        text = fetch_text(OWID_URL)
+    except urllib.error.HTTPError as exc:
+        cached = cached_payload()
+        if cached:
+            print(f"source fetch failed with HTTP {exc.code}; using checked-in cached data")
+            write_payload(cached, note="reused")
+            return
+        raise
+
     geo = {}
     for c in countries:
         code = c.get("cca3")
@@ -73,7 +102,6 @@ def main() -> None:
                 "restName": ((c.get("name") or {}).get("common") or ""),
             }
 
-    text = fetch_text(OWID_URL)
     latest: dict[str, dict] = {}
     for row in csv.DictReader(io.StringIO(text)):
         iso = row.get("iso_code") or ""
@@ -108,10 +136,7 @@ def main() -> None:
         "categories": list(MIX_COLUMNS.keys()),
         "countries": data,
     }
-    OUT.write_text("window.ENERGY_MIX_DATA = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n")
-    RAW_OUT.write_text(json.dumps(payload["source"], indent=2) + "\n")
-    years = sorted({d["year"] for d in data})
-    print(f"wrote {OUT.relative_to(OUT.parents[1])}: {len(data)} countries, latest years {years[-5:]} generatedAt={payload['generatedAt']}")
+    write_payload(payload)
 
 
 if __name__ == "__main__":
