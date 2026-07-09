@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
-import { compassDirection, tierForCountry, pickCountriesForTier, energyContext, topMixEntries } from "../src/game_logic.mjs";
+import { compassDirection } from "../vendor/country-guess-kit/geo.mjs";
+import { tierForCountry, pickCountriesForTier, energyContext, topMixEntries, mixDistance, similarityBadge } from "../src/game_logic.mjs";
 
 const cats = ["coal", "gas", "oil", "nuclear", "hydro", "wind", "solar", "biofuel", "otherRenewables"];
 const mix = (values) => Object.fromEntries(cats.map((c) => [c, values[c] ?? 0]));
@@ -29,6 +30,8 @@ assert.deepEqual(pickCountriesForTier([easy, surprise], "surprise"), [surprise])
 assert.equal(pickCountriesForTier([easy, surprise], "all").length, 2);
 
 assert.deepEqual(topMixEntries(country({ mix: mix({ hydro: 70, wind: 20, solar: 10 }) }), 2).map((x) => x.cat), ["hydro", "wind"]);
+assert.equal(mixDistance(country({ mix: mix({ coal: 80, gas: 20 }) }), country({ mix: mix({ coal: 60, wind: 40 }) })), 40);
+assert.deepEqual(similarityBadge(8), ["Excellent", "good"]);
 
 const context = energyContext(country({
   name: "Norway",
@@ -40,5 +43,6 @@ assert.match(context, /Norway/);
 assert.match(context, /hydro/i);
 assert.match(context, /150 TWh/);
 assert.match(context, /2024/);
+assert.match(context, /Surprise:/);
 
 console.log("game logic tests passed");

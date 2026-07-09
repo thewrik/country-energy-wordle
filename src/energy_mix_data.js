@@ -1,5 +1,5 @@
 window.ENERGY_MIX_DATA = {
-  "generatedAt": "2026-07-08T15:08:23Z",
+  "generatedAt": "2026-07-09T04:37:30Z",
   "source": {
     "energy": "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
     "geography": "https://raw.githubusercontent.com/mledoze/countries/master/countries.json",
