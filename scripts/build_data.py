@@ -25,7 +25,7 @@ MIX_COLUMNS = {
     "biofuel": "biofuel_share_elec",
     "otherRenewables": "other_renewables_share_elec_exc_biofuel",
 }
-MIN_GENERATION_TWH = 2.0
+MIN_GENERATION_TWH = 0.0
 
 
 def fetch_text(url: str) -> str:
@@ -100,6 +100,11 @@ def main() -> None:
                 "lat": float(latlng[0]),
                 "lng": float(latlng[1]),
                 "restName": ((c.get("name") or {}).get("common") or ""),
+                "officialName": ((c.get("name") or {}).get("official") or ""),
+                "cca2": c.get("cca2") or "",
+                "cca3": c.get("cca3") or "",
+                "fifa": c.get("fifa") or "",
+                "altSpellings": c.get("altSpellings") or [],
             }
 
     latest: dict[str, dict] = {}

@@ -1,10 +1,10 @@
 window.ENERGY_MIX_DATA = {
-  "generatedAt": "2026-07-09T04:39:43Z",
+  "generatedAt": "2026-07-09T04:54:17Z",
   "source": {
     "energy": "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
     "geography": "https://raw.githubusercontent.com/mledoze/countries/master/countries.json",
     "note": "Latest available electricity-generation source shares per country from OWID energy data; geography from REST Countries. Shares normalized to 100% for gameplay.",
-    "minGenerationTwh": 2.0
+    "minGenerationTwh": 0.0
   },
   "categories": [
     "coal",
@@ -18,6 +18,36 @@ window.ENERGY_MIX_DATA = {
     "otherRenewables"
   ],
   "countries": [
+    {
+      "name": "Afghanistan",
+      "iso": "AFG",
+      "year": 2024,
+      "generationTwh": 1.0,
+      "mix": {
+        "coal": 3.0,
+        "gas": 0.0,
+        "oil": 10.1,
+        "nuclear": 0.0,
+        "hydro": 75.8,
+        "wind": 0.0,
+        "solar": 11.1,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "lat": 33.0,
+      "lng": 65.0,
+      "restName": "Afghanistan",
+      "officialName": "Islamic Republic of Afghanistan",
+      "cca2": "AF",
+      "cca3": "AFG",
+      "fifa": "",
+      "altSpellings": [
+        "AF",
+        "Afġānistān"
+      ]
+    },
     {
       "name": "Albania",
       "iso": "ALB",
@@ -38,7 +68,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southeast Europe",
       "lat": 41.0,
       "lng": 20.0,
-      "restName": "Albania"
+      "restName": "Albania",
+      "officialName": "Republic of Albania",
+      "cca2": "AL",
+      "cca3": "ALB",
+      "fifa": "",
+      "altSpellings": [
+        "AL",
+        "Shqipëri",
+        "Shqipëria",
+        "Shqipnia"
+      ]
     },
     {
       "name": "Algeria",
@@ -60,7 +100,48 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Africa",
       "lat": 28.0,
       "lng": 3.0,
-      "restName": "Algeria"
+      "restName": "Algeria",
+      "officialName": "People's Democratic Republic of Algeria",
+      "cca2": "DZ",
+      "cca3": "DZA",
+      "fifa": "",
+      "altSpellings": [
+        "DZ",
+        "Dzayer",
+        "Algérie"
+      ]
+    },
+    {
+      "name": "American Samoa",
+      "iso": "ASM",
+      "year": 2024,
+      "generationTwh": 0.2,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 94.4,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 5.6,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "lat": -14.33333333,
+      "lng": -170.0,
+      "restName": "American Samoa",
+      "officialName": "American Samoa",
+      "cca2": "AS",
+      "cca3": "ASM",
+      "fifa": "",
+      "altSpellings": [
+        "AS",
+        "Amerika Sāmoa",
+        "Amelika Sāmoa",
+        "Sāmoa Amelika"
+      ]
     },
     {
       "name": "Angola",
@@ -82,7 +163,45 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Middle Africa",
       "lat": -12.5,
       "lng": 18.5,
-      "restName": "Angola"
+      "restName": "Angola",
+      "officialName": "Republic of Angola",
+      "cca2": "AO",
+      "cca3": "AGO",
+      "fifa": "",
+      "altSpellings": [
+        "AO",
+        "República de Angola",
+        "ʁɛpublika de an'ɡɔla"
+      ]
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "iso": "ATG",
+      "year": 2024,
+      "generationTwh": 0.4,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 91.9,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 8.1,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 17.05,
+      "lng": -61.8,
+      "restName": "Antigua and Barbuda",
+      "officialName": "Antigua and Barbuda",
+      "cca2": "AG",
+      "cca3": "ATG",
+      "fifa": "",
+      "altSpellings": [
+        "AG"
+      ]
     },
     {
       "name": "Argentina",
@@ -104,7 +223,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": -34.0,
       "lng": -64.0,
-      "restName": "Argentina"
+      "restName": "Argentina",
+      "officialName": "Argentine Republic",
+      "cca2": "AR",
+      "cca3": "ARG",
+      "fifa": "",
+      "altSpellings": [
+        "AR",
+        "Argentine Republic",
+        "República Argentina"
+      ]
     },
     {
       "name": "Armenia",
@@ -126,7 +254,46 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 40.0,
       "lng": 45.0,
-      "restName": "Armenia"
+      "restName": "Armenia",
+      "officialName": "Republic of Armenia",
+      "cca2": "AM",
+      "cca3": "ARM",
+      "fifa": "",
+      "altSpellings": [
+        "AM",
+        "Hayastan",
+        "Republic of Armenia",
+        "Հայաստանի Հանրապետություն"
+      ]
+    },
+    {
+      "name": "Aruba",
+      "iso": "ABW",
+      "year": 2024,
+      "generationTwh": 1.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 83.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 14.0,
+        "solar": 3.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 12.5,
+      "lng": -69.96666666,
+      "restName": "Aruba",
+      "officialName": "Aruba",
+      "cca2": "AW",
+      "cca3": "ABW",
+      "fifa": "",
+      "altSpellings": [
+        "AW"
+      ]
     },
     {
       "name": "Australia",
@@ -148,7 +315,14 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Australia and New Zealand",
       "lat": -27.0,
       "lng": 133.0,
-      "restName": "Australia"
+      "restName": "Australia",
+      "officialName": "Commonwealth of Australia",
+      "cca2": "AU",
+      "cca3": "AUS",
+      "fifa": "",
+      "altSpellings": [
+        "AU"
+      ]
     },
     {
       "name": "Austria",
@@ -170,7 +344,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Europe",
       "lat": 47.33333333,
       "lng": 13.33333333,
-      "restName": "Austria"
+      "restName": "Austria",
+      "officialName": "Republic of Austria",
+      "cca2": "AT",
+      "cca3": "AUT",
+      "fifa": "",
+      "altSpellings": [
+        "AT",
+        "Osterreich",
+        "Oesterreich"
+      ]
     },
     {
       "name": "Azerbaijan",
@@ -192,7 +375,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 40.5,
       "lng": 47.5,
-      "restName": "Azerbaijan"
+      "restName": "Azerbaijan",
+      "officialName": "Republic of Azerbaijan",
+      "cca2": "AZ",
+      "cca3": "AZE",
+      "fifa": "",
+      "altSpellings": [
+        "AZ",
+        "Republic of Azerbaijan",
+        "Azərbaycan Respublikası"
+      ]
     },
     {
       "name": "Bahamas",
@@ -214,7 +406,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Caribbean",
       "lat": 24.25,
       "lng": -76.0,
-      "restName": "Bahamas"
+      "restName": "Bahamas",
+      "officialName": "Commonwealth of the Bahamas",
+      "cca2": "BS",
+      "cca3": "BHS",
+      "fifa": "",
+      "altSpellings": [
+        "BS",
+        "Commonwealth of the Bahamas"
+      ]
     },
     {
       "name": "Bahrain",
@@ -236,7 +436,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 26.0,
       "lng": 50.55,
-      "restName": "Bahrain"
+      "restName": "Bahrain",
+      "officialName": "Kingdom of Bahrain",
+      "cca2": "BH",
+      "cca3": "BHR",
+      "fifa": "",
+      "altSpellings": [
+        "BH",
+        "Kingdom of Bahrain",
+        "Mamlakat al-Baḥrayn"
+      ]
     },
     {
       "name": "Bangladesh",
@@ -258,7 +467,45 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Asia",
       "lat": 24.0,
       "lng": 90.0,
-      "restName": "Bangladesh"
+      "restName": "Bangladesh",
+      "officialName": "People's Republic of Bangladesh",
+      "cca2": "BD",
+      "cca3": "BGD",
+      "fifa": "",
+      "altSpellings": [
+        "BD",
+        "People's Republic of Bangladesh",
+        "Gônôprôjatôntri Bangladesh"
+      ]
+    },
+    {
+      "name": "Barbados",
+      "iso": "BRB",
+      "year": 2024,
+      "generationTwh": 1.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 2.7,
+        "oil": 88.3,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 9.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 13.16666666,
+      "lng": -59.53333333,
+      "restName": "Barbados",
+      "officialName": "Barbados",
+      "cca2": "BB",
+      "cca3": "BRB",
+      "fifa": "",
+      "altSpellings": [
+        "BB"
+      ]
     },
     {
       "name": "Belarus",
@@ -280,7 +527,18 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Europe",
       "lat": 53.0,
       "lng": 28.0,
-      "restName": "Belarus"
+      "restName": "Belarus",
+      "officialName": "Republic of Belarus",
+      "cca2": "BY",
+      "cca3": "BLR",
+      "fifa": "",
+      "altSpellings": [
+        "BY",
+        "Bielaruś",
+        "Republic of Belarus",
+        "Белоруссия",
+        "Республика Белоруссия"
+      ]
     },
     {
       "name": "Belgium",
@@ -302,7 +560,114 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Europe",
       "lat": 50.83333333,
       "lng": 4.0,
-      "restName": "Belgium"
+      "restName": "Belgium",
+      "officialName": "Kingdom of Belgium",
+      "cca2": "BE",
+      "cca3": "BEL",
+      "fifa": "",
+      "altSpellings": [
+        "BE",
+        "België",
+        "Belgie",
+        "Belgien",
+        "Belgique",
+        "Kingdom of Belgium",
+        "Koninkrijk België",
+        "Royaume de Belgique",
+        "Königreich Belgien"
+      ]
+    },
+    {
+      "name": "Belize",
+      "iso": "BLZ",
+      "year": 2024,
+      "generationTwh": 0.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 12.8,
+        "nuclear": 0.0,
+        "hydro": 51.1,
+        "wind": 0.0,
+        "solar": 2.1,
+        "biofuel": 34.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Central America",
+      "lat": 17.25,
+      "lng": -88.75,
+      "restName": "Belize",
+      "officialName": "Belize",
+      "cca2": "BZ",
+      "cca3": "BLZ",
+      "fifa": "",
+      "altSpellings": [
+        "BZ"
+      ]
+    },
+    {
+      "name": "Benin",
+      "iso": "BEN",
+      "year": 2024,
+      "generationTwh": 1.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 72.2,
+        "oil": 23.8,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 4.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 9.5,
+      "lng": 2.25,
+      "restName": "Benin",
+      "officialName": "Republic of Benin",
+      "cca2": "BJ",
+      "cca3": "BEN",
+      "fifa": "",
+      "altSpellings": [
+        "BJ",
+        "Republic of Benin",
+        "République du Bénin"
+      ]
+    },
+    {
+      "name": "Bermuda",
+      "iso": "BMU",
+      "year": 2024,
+      "generationTwh": 0.6,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 98.4,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 1.6,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "North America",
+      "lat": 32.33333333,
+      "lng": -64.75,
+      "restName": "Bermuda",
+      "officialName": "Bermuda",
+      "cca2": "BM",
+      "cca3": "BMU",
+      "fifa": "",
+      "altSpellings": [
+        "BM",
+        "The Islands of Bermuda",
+        "The Bermudas",
+        "Somers Isles"
+      ]
     },
     {
       "name": "Bhutan",
@@ -324,7 +689,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Asia",
       "lat": 27.5,
       "lng": 90.5,
-      "restName": "Bhutan"
+      "restName": "Bhutan",
+      "officialName": "Kingdom of Bhutan",
+      "cca2": "BT",
+      "cca3": "BTN",
+      "fifa": "",
+      "altSpellings": [
+        "BT",
+        "Kingdom of Bhutan"
+      ]
     },
     {
       "name": "Bolivia",
@@ -346,7 +719,22 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": -17.0,
       "lng": -65.0,
-      "restName": "Bolivia"
+      "restName": "Bolivia",
+      "officialName": "Plurinational State of Bolivia",
+      "cca2": "BO",
+      "cca3": "BOL",
+      "fifa": "",
+      "altSpellings": [
+        "BO",
+        "Buliwya",
+        "Wuliwya",
+        "Bolivia, Plurinational State of",
+        "Plurinational State of Bolivia",
+        "Estado Plurinacional de Bolivia",
+        "Buliwya Mamallaqta",
+        "Wuliwya Suyu",
+        "Tetã Volívia"
+      ]
     },
     {
       "name": "Bosnia and Herzegovina",
@@ -368,7 +756,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southeast Europe",
       "lat": 44.0,
       "lng": 18.0,
-      "restName": "Bosnia and Herzegovina"
+      "restName": "Bosnia and Herzegovina",
+      "officialName": "Bosnia and Herzegovina",
+      "cca2": "BA",
+      "cca3": "BIH",
+      "fifa": "",
+      "altSpellings": [
+        "BA",
+        "Bosnia-Herzegovina",
+        "Босна и Херцеговина"
+      ]
     },
     {
       "name": "Botswana",
@@ -390,7 +787,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Africa",
       "lat": -22.0,
       "lng": 24.0,
-      "restName": "Botswana"
+      "restName": "Botswana",
+      "officialName": "Republic of Botswana",
+      "cca2": "BW",
+      "cca3": "BWA",
+      "fifa": "",
+      "altSpellings": [
+        "BW",
+        "Republic of Botswana",
+        "Lefatshe la Botswana"
+      ]
     },
     {
       "name": "Brazil",
@@ -412,7 +818,47 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": -10.0,
       "lng": -55.0,
-      "restName": "Brazil"
+      "restName": "Brazil",
+      "officialName": "Federative Republic of Brazil",
+      "cca2": "BR",
+      "cca3": "BRA",
+      "fifa": "",
+      "altSpellings": [
+        "BR",
+        "Brasil",
+        "Federative Republic of Brazil",
+        "República Federativa do Brasil"
+      ]
+    },
+    {
+      "name": "British Virgin Islands",
+      "iso": "VGB",
+      "year": 2023,
+      "generationTwh": 0.2,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 18.431383,
+      "lng": -64.62305,
+      "restName": "British Virgin Islands",
+      "officialName": "Virgin Islands",
+      "cca2": "VG",
+      "cca3": "VGB",
+      "fifa": "",
+      "altSpellings": [
+        "VG",
+        "Virgin Islands, British"
+      ]
     },
     {
       "name": "Brunei",
@@ -434,7 +880,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 4.5,
       "lng": 114.66666666,
-      "restName": "Brunei"
+      "restName": "Brunei",
+      "officialName": "Nation of Brunei, Abode of Peace",
+      "cca2": "BN",
+      "cca3": "BRN",
+      "fifa": "",
+      "altSpellings": [
+        "BN",
+        "Brunei Darussalam",
+        "Nation of Brunei",
+        "the Abode of Peace"
+      ]
     },
     {
       "name": "Bulgaria",
@@ -456,7 +912,77 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southeast Europe",
       "lat": 43.0,
       "lng": 25.0,
-      "restName": "Bulgaria"
+      "restName": "Bulgaria",
+      "officialName": "Republic of Bulgaria",
+      "cca2": "BG",
+      "cca3": "BGR",
+      "fifa": "",
+      "altSpellings": [
+        "BG",
+        "Republic of Bulgaria",
+        "Република България"
+      ]
+    },
+    {
+      "name": "Burkina Faso",
+      "iso": "BFA",
+      "year": 2024,
+      "generationTwh": 1.7,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 82.9,
+        "nuclear": 0.0,
+        "hydro": 5.3,
+        "wind": 0.0,
+        "solar": 6.5,
+        "biofuel": 5.3,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 13.0,
+      "lng": -2.0,
+      "restName": "Burkina Faso",
+      "officialName": "Burkina Faso",
+      "cca2": "BF",
+      "cca3": "BFA",
+      "fifa": "",
+      "altSpellings": [
+        "BF"
+      ]
+    },
+    {
+      "name": "Burundi",
+      "iso": "BDI",
+      "year": 2024,
+      "generationTwh": 0.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 24.5,
+        "nuclear": 0.0,
+        "hydro": 73.5,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 2.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "lat": -3.5,
+      "lng": 30.0,
+      "restName": "Burundi",
+      "officialName": "Republic of Burundi",
+      "cca2": "BI",
+      "cca3": "BDI",
+      "fifa": "",
+      "altSpellings": [
+        "BI",
+        "Republic of Burundi",
+        "Republika y'Uburundi",
+        "République du Burundi"
+      ]
     },
     {
       "name": "Cambodia",
@@ -478,7 +1004,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 13.0,
       "lng": 105.0,
-      "restName": "Cambodia"
+      "restName": "Cambodia",
+      "officialName": "Kingdom of Cambodia",
+      "cca2": "KH",
+      "cca3": "KHM",
+      "fifa": "",
+      "altSpellings": [
+        "KH",
+        "Kingdom of Cambodia"
+      ]
     },
     {
       "name": "Cameroon",
@@ -500,7 +1034,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Middle Africa",
       "lat": 6.0,
       "lng": 12.0,
-      "restName": "Cameroon"
+      "restName": "Cameroon",
+      "officialName": "Republic of Cameroon",
+      "cca2": "CM",
+      "cca3": "CMR",
+      "fifa": "",
+      "altSpellings": [
+        "CM",
+        "Republic of Cameroon",
+        "République du Cameroun"
+      ]
     },
     {
       "name": "Canada",
@@ -522,7 +1065,137 @@ window.ENERGY_MIX_DATA = {
       "subregion": "North America",
       "lat": 60.0,
       "lng": -95.0,
-      "restName": "Canada"
+      "restName": "Canada",
+      "officialName": "Canada",
+      "cca2": "CA",
+      "cca3": "CAN",
+      "fifa": "",
+      "altSpellings": [
+        "CA"
+      ]
+    },
+    {
+      "name": "Cape Verde",
+      "iso": "CPV",
+      "year": 2024,
+      "generationTwh": 0.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 69.2,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 15.4,
+        "solar": 15.4,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 16.0,
+      "lng": -24.0,
+      "restName": "Cape Verde",
+      "officialName": "Republic of Cabo Verde",
+      "cca2": "CV",
+      "cca3": "CPV",
+      "fifa": "",
+      "altSpellings": [
+        "CV",
+        "Republic of Cabo Verde",
+        "República de Cabo Verde"
+      ]
+    },
+    {
+      "name": "Cayman Islands",
+      "iso": "CYM",
+      "year": 2024,
+      "generationTwh": 0.7,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 95.8,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 4.2,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 19.5,
+      "lng": -80.5,
+      "restName": "Cayman Islands",
+      "officialName": "Cayman Islands",
+      "cca2": "KY",
+      "cca3": "CYM",
+      "fifa": "",
+      "altSpellings": [
+        "KY"
+      ]
+    },
+    {
+      "name": "Central African Republic",
+      "iso": "CAF",
+      "year": 2023,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 0.0,
+        "nuclear": 0.0,
+        "hydro": 100.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "lat": 7.0,
+      "lng": 21.0,
+      "restName": "Central African Republic",
+      "officialName": "Central African Republic",
+      "cca2": "CF",
+      "cca3": "CAF",
+      "fifa": "",
+      "altSpellings": [
+        "CF",
+        "Central African Republic",
+        "République centrafricaine"
+      ]
+    },
+    {
+      "name": "Chad",
+      "iso": "TCD",
+      "year": 2024,
+      "generationTwh": 0.4,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 94.6,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 2.7,
+        "solar": 0.0,
+        "biofuel": 2.7,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "lat": 15.0,
+      "lng": 19.0,
+      "restName": "Chad",
+      "officialName": "Republic of Chad",
+      "cca2": "TD",
+      "cca3": "TCD",
+      "fifa": "",
+      "altSpellings": [
+        "TD",
+        "Tchad",
+        "Republic of Chad",
+        "République du Tchad"
+      ]
     },
     {
       "name": "Chile",
@@ -544,7 +1217,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": -30.0,
       "lng": -71.0,
-      "restName": "Chile"
+      "restName": "Chile",
+      "officialName": "Republic of Chile",
+      "cca2": "CL",
+      "cca3": "CHL",
+      "fifa": "",
+      "altSpellings": [
+        "CL",
+        "Republic of Chile",
+        "República de Chile"
+      ]
     },
     {
       "name": "China",
@@ -566,7 +1248,20 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Asia",
       "lat": 35.0,
       "lng": 105.0,
-      "restName": "China"
+      "restName": "China",
+      "officialName": "People's Republic of China",
+      "cca2": "CN",
+      "cca3": "CHN",
+      "fifa": "",
+      "altSpellings": [
+        "CN",
+        "Zhōngguó",
+        "Zhongguo",
+        "Zhonghua",
+        "People's Republic of China",
+        "中华人民共和国",
+        "Zhōnghuá Rénmín Gònghéguó"
+      ]
     },
     {
       "name": "Colombia",
@@ -588,7 +1283,49 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": 4.0,
       "lng": -72.0,
-      "restName": "Colombia"
+      "restName": "Colombia",
+      "officialName": "Republic of Colombia",
+      "cca2": "CO",
+      "cca3": "COL",
+      "fifa": "",
+      "altSpellings": [
+        "CO",
+        "Republic of Colombia",
+        "República de Colombia"
+      ]
+    },
+    {
+      "name": "Comoros",
+      "iso": "COM",
+      "year": 2023,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "lat": -12.16666666,
+      "lng": 44.25,
+      "restName": "Comoros",
+      "officialName": "Union of the Comoros",
+      "cca2": "KM",
+      "cca3": "COM",
+      "fifa": "",
+      "altSpellings": [
+        "KM",
+        "Union of the Comoros",
+        "Union des Comores",
+        "Udzima wa Komori",
+        "al-Ittiḥād al-Qumurī"
+      ]
     },
     {
       "name": "Congo",
@@ -610,7 +1347,46 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Middle Africa",
       "lat": -1.0,
       "lng": 15.0,
-      "restName": "Congo"
+      "restName": "Congo",
+      "officialName": "Republic of the Congo",
+      "cca2": "CG",
+      "cca3": "COG",
+      "fifa": "",
+      "altSpellings": [
+        "CG",
+        "Congo",
+        "Congo-Brazzaville"
+      ]
+    },
+    {
+      "name": "Cook Islands",
+      "iso": "COK",
+      "year": 2024,
+      "generationTwh": 0.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 50.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 50.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "lat": -21.23333333,
+      "lng": -159.76666666,
+      "restName": "Cook Islands",
+      "officialName": "Cook Islands",
+      "cca2": "CK",
+      "cca3": "COK",
+      "fifa": "",
+      "altSpellings": [
+        "CK",
+        "Kūki 'Āirani"
+      ]
     },
     {
       "name": "Costa Rica",
@@ -632,7 +1408,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central America",
       "lat": 10.0,
       "lng": -84.0,
-      "restName": "Costa Rica"
+      "restName": "Costa Rica",
+      "officialName": "Republic of Costa Rica",
+      "cca2": "CR",
+      "cca3": "CRI",
+      "fifa": "",
+      "altSpellings": [
+        "CR",
+        "Republic of Costa Rica",
+        "República de Costa Rica"
+      ]
     },
     {
       "name": "Cote d'Ivoire",
@@ -654,7 +1439,19 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Africa",
       "lat": 8.0,
       "lng": -5.0,
-      "restName": "Ivory Coast"
+      "restName": "Ivory Coast",
+      "officialName": "Republic of Côte d'Ivoire",
+      "cca2": "CI",
+      "cca3": "CIV",
+      "fifa": "",
+      "altSpellings": [
+        "CI",
+        "Côte d'Ivoire",
+        "Cote d'Ivoire",
+        "Ivory Coast",
+        "Republic of Côte d'Ivoire",
+        "République de Côte d'Ivoire"
+      ]
     },
     {
       "name": "Croatia",
@@ -676,7 +1473,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southeast Europe",
       "lat": 45.16666666,
       "lng": 15.5,
-      "restName": "Croatia"
+      "restName": "Croatia",
+      "officialName": "Republic of Croatia",
+      "cca2": "HR",
+      "cca3": "HRV",
+      "fifa": "",
+      "altSpellings": [
+        "HR",
+        "Hrvatska",
+        "Republic of Croatia",
+        "Republika Hrvatska"
+      ]
     },
     {
       "name": "Cuba",
@@ -698,7 +1505,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Caribbean",
       "lat": 21.5,
       "lng": -80.0,
-      "restName": "Cuba"
+      "restName": "Cuba",
+      "officialName": "Republic of Cuba",
+      "cca2": "CU",
+      "cca3": "CUB",
+      "fifa": "",
+      "altSpellings": [
+        "CU",
+        "Republic of Cuba",
+        "República de Cuba"
+      ]
     },
     {
       "name": "Cyprus",
@@ -720,7 +1536,19 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Europe",
       "lat": 35.0,
       "lng": 33.0,
-      "restName": "Cyprus"
+      "restName": "Cyprus",
+      "officialName": "Republic of Cyprus",
+      "cca2": "CY",
+      "cca3": "CYP",
+      "fifa": "",
+      "altSpellings": [
+        "CY",
+        "Kýpros",
+        "Kıbrıs",
+        "Republic of Cyprus",
+        "Κυπριακή Δημοκρατία",
+        "Kıbrıs Cumhuriyeti"
+      ]
     },
     {
       "name": "Czechia",
@@ -742,7 +1570,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Europe",
       "lat": 49.75,
       "lng": 15.5,
-      "restName": "Czechia"
+      "restName": "Czechia",
+      "officialName": "Czech Republic",
+      "cca2": "CZ",
+      "cca3": "CZE",
+      "fifa": "",
+      "altSpellings": [
+        "CZ",
+        "Česká republika",
+        "Česko"
+      ]
     },
     {
       "name": "Democratic Republic of Congo",
@@ -764,7 +1601,19 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Middle Africa",
       "lat": 0.0,
       "lng": 25.0,
-      "restName": "DR Congo"
+      "restName": "DR Congo",
+      "officialName": "Democratic Republic of the Congo",
+      "cca2": "CD",
+      "cca3": "COD",
+      "fifa": "",
+      "altSpellings": [
+        "CD",
+        "DR Congo",
+        "Congo-Kinshasa",
+        "Congo, the Democratic Republic of the",
+        "Democratic Republic of Congo",
+        "DRC"
+      ]
     },
     {
       "name": "Denmark",
@@ -786,7 +1635,84 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 56.0,
       "lng": 10.0,
-      "restName": "Denmark"
+      "restName": "Denmark",
+      "officialName": "Kingdom of Denmark",
+      "cca2": "DK",
+      "cca3": "DNK",
+      "fifa": "",
+      "altSpellings": [
+        "DK",
+        "Danmark",
+        "Kingdom of Denmark",
+        "Kongeriget Danmark"
+      ]
+    },
+    {
+      "name": "Djibouti",
+      "iso": "DJI",
+      "year": 2024,
+      "generationTwh": 0.2,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 65.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 35.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "lat": 11.5,
+      "lng": 43.0,
+      "restName": "Djibouti",
+      "officialName": "Republic of Djibouti",
+      "cca2": "DJ",
+      "cca3": "DJI",
+      "fifa": "",
+      "altSpellings": [
+        "DJ",
+        "Jabuuti",
+        "Gabuuti",
+        "Republic of Djibouti",
+        "République de Djibouti",
+        "Gabuutih Ummuuno",
+        "Jamhuuriyadda Jabuuti"
+      ]
+    },
+    {
+      "name": "Dominica",
+      "iso": "DMA",
+      "year": 2023,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 86.7,
+        "nuclear": 0.0,
+        "hydro": 13.3,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 15.41666666,
+      "lng": -61.33333333,
+      "restName": "Dominica",
+      "officialName": "Commonwealth of Dominica",
+      "cca2": "DM",
+      "cca3": "DMA",
+      "fifa": "",
+      "altSpellings": [
+        "DM",
+        "Dominique",
+        "Wai‘tu kubuli",
+        "Commonwealth of Dominica"
+      ]
     },
     {
       "name": "Dominican Republic",
@@ -808,7 +1734,50 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Caribbean",
       "lat": 19.0,
       "lng": -70.66666666,
-      "restName": "Dominican Republic"
+      "restName": "Dominican Republic",
+      "officialName": "Dominican Republic",
+      "cca2": "DO",
+      "cca3": "DOM",
+      "fifa": "",
+      "altSpellings": [
+        "DO"
+      ]
+    },
+    {
+      "name": "East Timor",
+      "iso": "TLS",
+      "year": 2024,
+      "generationTwh": 0.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Asia",
+      "subregion": "South-Eastern Asia",
+      "lat": -8.83333333,
+      "lng": 125.91666666,
+      "restName": "Timor-Leste",
+      "officialName": "Democratic Republic of Timor-Leste",
+      "cca2": "TL",
+      "cca3": "TLS",
+      "fifa": "",
+      "altSpellings": [
+        "TL",
+        "East Timor",
+        "Timor",
+        "Democratic Republic of Timor-Leste",
+        "República Democrática de Timor-Leste",
+        "Repúblika Demokrátika Timór-Leste",
+        "Timór Lorosa'e",
+        "Timor Lorosae"
+      ]
     },
     {
       "name": "Ecuador",
@@ -830,7 +1799,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": -2.0,
       "lng": -77.5,
-      "restName": "Ecuador"
+      "restName": "Ecuador",
+      "officialName": "Republic of Ecuador",
+      "cca2": "EC",
+      "cca3": "ECU",
+      "fifa": "",
+      "altSpellings": [
+        "EC",
+        "Republic of Ecuador",
+        "República del Ecuador"
+      ]
     },
     {
       "name": "Egypt",
@@ -852,7 +1830,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Africa",
       "lat": 27.0,
       "lng": 30.0,
-      "restName": "Egypt"
+      "restName": "Egypt",
+      "officialName": "Arab Republic of Egypt",
+      "cca2": "EG",
+      "cca3": "EGY",
+      "fifa": "",
+      "altSpellings": [
+        "EG",
+        "Arab Republic of Egypt"
+      ]
     },
     {
       "name": "El Salvador",
@@ -874,7 +1860,83 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central America",
       "lat": 13.83333333,
       "lng": -88.91666666,
-      "restName": "El Salvador"
+      "restName": "El Salvador",
+      "officialName": "Republic of El Salvador",
+      "cca2": "SV",
+      "cca3": "SLV",
+      "fifa": "",
+      "altSpellings": [
+        "SV",
+        "Republic of El Salvador",
+        "República de El Salvador"
+      ]
+    },
+    {
+      "name": "Equatorial Guinea",
+      "iso": "GNQ",
+      "year": 2024,
+      "generationTwh": 1.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 72.5,
+        "oil": 0.7,
+        "nuclear": 0.0,
+        "hydro": 26.8,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "lat": 2.0,
+      "lng": 10.0,
+      "restName": "Equatorial Guinea",
+      "officialName": "Republic of Equatorial Guinea",
+      "cca2": "GQ",
+      "cca3": "GNQ",
+      "fifa": "",
+      "altSpellings": [
+        "GQ",
+        "Republic of Equatorial Guinea",
+        "República de Guinea Ecuatorial",
+        "République de Guinée équatoriale",
+        "República da Guiné Equatorial"
+      ]
+    },
+    {
+      "name": "Eritrea",
+      "iso": "ERI",
+      "year": 2024,
+      "generationTwh": 0.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 88.9,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 11.1,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "lat": 15.0,
+      "lng": 39.0,
+      "restName": "Eritrea",
+      "officialName": "State of Eritrea",
+      "cca2": "ER",
+      "cca3": "ERI",
+      "fifa": "",
+      "altSpellings": [
+        "ER",
+        "State of Eritrea",
+        "ሃገረ ኤርትራ",
+        "Dawlat Iritriyá",
+        "ʾErtrā",
+        "Iritriyā"
+      ]
     },
     {
       "name": "Estonia",
@@ -896,7 +1958,52 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 59.0,
       "lng": 26.0,
-      "restName": "Estonia"
+      "restName": "Estonia",
+      "officialName": "Republic of Estonia",
+      "cca2": "EE",
+      "cca3": "EST",
+      "fifa": "",
+      "altSpellings": [
+        "EE",
+        "Eesti",
+        "Republic of Estonia",
+        "Eesti Vabariik"
+      ]
+    },
+    {
+      "name": "Eswatini",
+      "iso": "SWZ",
+      "year": 2024,
+      "generationTwh": 0.6,
+      "mix": {
+        "coal": 3.3,
+        "gas": 0.0,
+        "oil": 0.0,
+        "nuclear": 0.0,
+        "hydro": 57.4,
+        "wind": 0.0,
+        "solar": 4.9,
+        "biofuel": 34.4,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "lat": -26.5,
+      "lng": 31.5,
+      "restName": "Eswatini",
+      "officialName": "Kingdom of Eswatini",
+      "cca2": "SZ",
+      "cca3": "SWZ",
+      "fifa": "",
+      "altSpellings": [
+        "SZ",
+        "Swaziland",
+        "weSwatini",
+        "Swatini",
+        "Ngwane",
+        "Kingdom of Eswatini",
+        "Umbuso weSwatini"
+      ]
     },
     {
       "name": "Ethiopia",
@@ -918,7 +2025,113 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": 8.0,
       "lng": 38.0,
-      "restName": "Ethiopia"
+      "restName": "Ethiopia",
+      "officialName": "Federal Democratic Republic of Ethiopia",
+      "cca2": "ET",
+      "cca3": "ETH",
+      "fifa": "",
+      "altSpellings": [
+        "ET",
+        "ʾĪtyōṗṗyā",
+        "Federal Democratic Republic of Ethiopia",
+        "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ"
+      ]
+    },
+    {
+      "name": "Falkland Islands",
+      "iso": "FLK",
+      "year": 2023,
+      "generationTwh": 0.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "South America",
+      "lat": -51.75,
+      "lng": -59.0,
+      "restName": "Falkland Islands",
+      "officialName": "Falkland Islands",
+      "cca2": "FK",
+      "cca3": "FLK",
+      "fifa": "",
+      "altSpellings": [
+        "FK",
+        "Islas Malvinas",
+        "Falkland Islands (Malvinas)"
+      ]
+    },
+    {
+      "name": "Faroe Islands",
+      "iso": "FRO",
+      "year": 2023,
+      "generationTwh": 0.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 53.1,
+        "nuclear": 0.0,
+        "hydro": 26.5,
+        "wind": 18.4,
+        "solar": 0.0,
+        "biofuel": 2.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "lat": 62.0,
+      "lng": -7.0,
+      "restName": "Faroe Islands",
+      "officialName": "Faroe Islands",
+      "cca2": "FO",
+      "cca3": "FRO",
+      "fifa": "",
+      "altSpellings": [
+        "FO",
+        "Føroyar",
+        "Færøerne",
+        "Faeroe Islands"
+      ]
+    },
+    {
+      "name": "Fiji",
+      "iso": "FJI",
+      "year": 2024,
+      "generationTwh": 1.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 36.5,
+        "nuclear": 0.0,
+        "hydro": 52.2,
+        "wind": 0.0,
+        "solar": 0.9,
+        "biofuel": 10.4,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "lat": -18.0,
+      "lng": 175.0,
+      "restName": "Fiji",
+      "officialName": "Republic of Fiji",
+      "cca2": "FJ",
+      "cca3": "FJI",
+      "fifa": "",
+      "altSpellings": [
+        "FJ",
+        "Viti",
+        "Republic of Fiji",
+        "Matanitu ko Viti",
+        "Fijī Gaṇarājya"
+      ]
     },
     {
       "name": "Finland",
@@ -940,7 +2153,18 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 64.0,
       "lng": 26.0,
-      "restName": "Finland"
+      "restName": "Finland",
+      "officialName": "Republic of Finland",
+      "cca2": "FI",
+      "cca3": "FIN",
+      "fifa": "",
+      "altSpellings": [
+        "FI",
+        "Suomi",
+        "Republic of Finland",
+        "Suomen tasavalta",
+        "Republiken Finland"
+      ]
     },
     {
       "name": "France",
@@ -962,7 +2186,79 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Europe",
       "lat": 46.0,
       "lng": 2.0,
-      "restName": "France"
+      "restName": "France",
+      "officialName": "French Republic",
+      "cca2": "FR",
+      "cca3": "FRA",
+      "fifa": "",
+      "altSpellings": [
+        "FR",
+        "French Republic",
+        "République française"
+      ]
+    },
+    {
+      "name": "French Guiana",
+      "iso": "GUF",
+      "year": 2023,
+      "generationTwh": 1.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 34.7,
+        "nuclear": 0.0,
+        "hydro": 53.1,
+        "wind": 0.0,
+        "solar": 6.1,
+        "biofuel": 6.1,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "South America",
+      "lat": 4.0,
+      "lng": -53.0,
+      "restName": "French Guiana",
+      "officialName": "Guiana",
+      "cca2": "GF",
+      "cca3": "GUF",
+      "fifa": "",
+      "altSpellings": [
+        "GF",
+        "Guiana",
+        "Guyane"
+      ]
+    },
+    {
+      "name": "French Polynesia",
+      "iso": "PYF",
+      "year": 2024,
+      "generationTwh": 0.7,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 65.3,
+        "nuclear": 0.0,
+        "hydro": 26.4,
+        "wind": 0.0,
+        "solar": 8.3,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "lat": -15.0,
+      "lng": -140.0,
+      "restName": "French Polynesia",
+      "officialName": "French Polynesia",
+      "cca2": "PF",
+      "cca3": "PYF",
+      "fifa": "",
+      "altSpellings": [
+        "PF",
+        "Polynésie française",
+        "French Polynesia",
+        "Pōrīnetia Farāni"
+      ]
     },
     {
       "name": "Gabon",
@@ -984,7 +2280,46 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Middle Africa",
       "lat": -1.0,
       "lng": 11.75,
-      "restName": "Gabon"
+      "restName": "Gabon",
+      "officialName": "Gabonese Republic",
+      "cca2": "GA",
+      "cca3": "GAB",
+      "fifa": "",
+      "altSpellings": [
+        "GA",
+        "Gabonese Republic",
+        "République Gabonaise"
+      ]
+    },
+    {
+      "name": "Gambia",
+      "iso": "GMB",
+      "year": 2024,
+      "generationTwh": 0.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 13.46666666,
+      "lng": -16.56666666,
+      "restName": "Gambia",
+      "officialName": "Republic of the Gambia",
+      "cca2": "GM",
+      "cca3": "GMB",
+      "fifa": "",
+      "altSpellings": [
+        "GM",
+        "Republic of the Gambia"
+      ]
     },
     {
       "name": "Georgia",
@@ -1006,7 +2341,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 42.0,
       "lng": 43.5,
-      "restName": "Georgia"
+      "restName": "Georgia",
+      "officialName": "Georgia",
+      "cca2": "GE",
+      "cca3": "GEO",
+      "fifa": "",
+      "altSpellings": [
+        "GE",
+        "Sakartvelo"
+      ]
     },
     {
       "name": "Germany",
@@ -1028,7 +2371,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Europe",
       "lat": 51.0,
       "lng": 9.0,
-      "restName": "Germany"
+      "restName": "Germany",
+      "officialName": "Federal Republic of Germany",
+      "cca2": "DE",
+      "cca3": "DEU",
+      "fifa": "",
+      "altSpellings": [
+        "DE",
+        "Federal Republic of Germany",
+        "Bundesrepublik Deutschland"
+      ]
     },
     {
       "name": "Ghana",
@@ -1050,7 +2402,43 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Africa",
       "lat": 8.0,
       "lng": -2.0,
-      "restName": "Ghana"
+      "restName": "Ghana",
+      "officialName": "Republic of Ghana",
+      "cca2": "GH",
+      "cca3": "GHA",
+      "fifa": "",
+      "altSpellings": [
+        "GH"
+      ]
+    },
+    {
+      "name": "Gibraltar",
+      "iso": "GIB",
+      "year": 2024,
+      "generationTwh": 0.2,
+      "mix": {
+        "coal": 0.0,
+        "gas": 81.8,
+        "oil": 18.2,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "lat": 36.13333333,
+      "lng": -5.35,
+      "restName": "Gibraltar",
+      "officialName": "Gibraltar",
+      "cca2": "GI",
+      "cca3": "GIB",
+      "fifa": "",
+      "altSpellings": [
+        "GI"
+      ]
     },
     {
       "name": "Greece",
@@ -1072,7 +2460,136 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Europe",
       "lat": 39.0,
       "lng": 22.0,
-      "restName": "Greece"
+      "restName": "Greece",
+      "officialName": "Hellenic Republic",
+      "cca2": "GR",
+      "cca3": "GRC",
+      "fifa": "",
+      "altSpellings": [
+        "GR",
+        "Elláda",
+        "Hellenic Republic",
+        "Ελληνική Δημοκρατία"
+      ]
+    },
+    {
+      "name": "Greenland",
+      "iso": "GRL",
+      "year": 2024,
+      "generationTwh": 0.6,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 16.7,
+        "nuclear": 0.0,
+        "hydro": 78.3,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 5.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "North America",
+      "lat": 72.0,
+      "lng": -40.0,
+      "restName": "Greenland",
+      "officialName": "Greenland",
+      "cca2": "GL",
+      "cca3": "GRL",
+      "fifa": "",
+      "altSpellings": [
+        "GL",
+        "Grønland"
+      ]
+    },
+    {
+      "name": "Grenada",
+      "iso": "GRD",
+      "year": 2024,
+      "generationTwh": 0.2,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 12.11666666,
+      "lng": -61.66666666,
+      "restName": "Grenada",
+      "officialName": "Grenada",
+      "cca2": "GD",
+      "cca3": "GRD",
+      "fifa": "",
+      "altSpellings": [
+        "GD"
+      ]
+    },
+    {
+      "name": "Guadeloupe",
+      "iso": "GLP",
+      "year": 2023,
+      "generationTwh": 1.7,
+      "mix": {
+        "coal": 13.2,
+        "gas": 0.0,
+        "oil": 51.4,
+        "nuclear": 0.0,
+        "hydro": 0.6,
+        "wind": 6.0,
+        "solar": 6.6,
+        "biofuel": 15.6,
+        "otherRenewables": 6.6
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 16.25,
+      "lng": -61.583333,
+      "restName": "Guadeloupe",
+      "officialName": "Guadeloupe",
+      "cca2": "GP",
+      "cca3": "GLP",
+      "fifa": "",
+      "altSpellings": [
+        "GP",
+        "Gwadloup"
+      ]
+    },
+    {
+      "name": "Guam",
+      "iso": "GUM",
+      "year": 2024,
+      "generationTwh": 1.9,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 91.4,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 8.6,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "lat": 13.46666666,
+      "lng": 144.78333333,
+      "restName": "Guam",
+      "officialName": "Guam",
+      "cca2": "GU",
+      "cca3": "GUM",
+      "fifa": "",
+      "altSpellings": [
+        "GU",
+        "Guåhån"
+      ]
     },
     {
       "name": "Guatemala",
@@ -1094,7 +2611,14 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central America",
       "lat": 15.5,
       "lng": -90.25,
-      "restName": "Guatemala"
+      "restName": "Guatemala",
+      "officialName": "Republic of Guatemala",
+      "cca2": "GT",
+      "cca3": "GTM",
+      "fifa": "",
+      "altSpellings": [
+        "GT"
+      ]
     },
     {
       "name": "Guinea",
@@ -1116,7 +2640,109 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Africa",
       "lat": 11.0,
       "lng": -10.0,
-      "restName": "Guinea"
+      "restName": "Guinea",
+      "officialName": "Republic of Guinea",
+      "cca2": "GN",
+      "cca3": "GIN",
+      "fifa": "",
+      "altSpellings": [
+        "GN",
+        "Republic of Guinea",
+        "République de Guinée"
+      ]
+    },
+    {
+      "name": "Guinea-Bissau",
+      "iso": "GNB",
+      "year": 2024,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 12.0,
+      "lng": -15.0,
+      "restName": "Guinea-Bissau",
+      "officialName": "Republic of Guinea-Bissau",
+      "cca2": "GW",
+      "cca3": "GNB",
+      "fifa": "",
+      "altSpellings": [
+        "GW",
+        "Republic of Guinea-Bissau",
+        "República da Guiné-Bissau"
+      ]
+    },
+    {
+      "name": "Guyana",
+      "iso": "GUY",
+      "year": 2024,
+      "generationTwh": 1.4,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.7,
+        "oil": 96.5,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 1.4,
+        "biofuel": 1.4,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "South America",
+      "lat": 5.0,
+      "lng": -59.0,
+      "restName": "Guyana",
+      "officialName": "Co-operative Republic of Guyana",
+      "cca2": "GY",
+      "cca3": "GUY",
+      "fifa": "",
+      "altSpellings": [
+        "GY",
+        "Co-operative Republic of Guyana"
+      ]
+    },
+    {
+      "name": "Haiti",
+      "iso": "HTI",
+      "year": 2024,
+      "generationTwh": 0.9,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 81.4,
+        "nuclear": 0.0,
+        "hydro": 18.6,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 19.0,
+      "lng": -72.41666666,
+      "restName": "Haiti",
+      "officialName": "Republic of Haiti",
+      "cca2": "HT",
+      "cca3": "HTI",
+      "fifa": "",
+      "altSpellings": [
+        "HT",
+        "Republic of Haiti",
+        "République d'Haïti",
+        "Repiblik Ayiti"
+      ]
     },
     {
       "name": "Honduras",
@@ -1138,7 +2764,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central America",
       "lat": 15.0,
       "lng": -86.5,
-      "restName": "Honduras"
+      "restName": "Honduras",
+      "officialName": "Republic of Honduras",
+      "cca2": "HN",
+      "cca3": "HND",
+      "fifa": "",
+      "altSpellings": [
+        "HN",
+        "Republic of Honduras",
+        "República de Honduras"
+      ]
     },
     {
       "name": "Hong Kong",
@@ -1160,7 +2795,14 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Asia",
       "lat": 22.267,
       "lng": 114.188,
-      "restName": "Hong Kong"
+      "restName": "Hong Kong",
+      "officialName": "Hong Kong Special Administrative Region of the People's Republic of China",
+      "cca2": "HK",
+      "cca3": "HKG",
+      "fifa": "",
+      "altSpellings": [
+        "HK"
+      ]
     },
     {
       "name": "Hungary",
@@ -1182,7 +2824,14 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Europe",
       "lat": 47.0,
       "lng": 20.0,
-      "restName": "Hungary"
+      "restName": "Hungary",
+      "officialName": "Hungary",
+      "cca2": "HU",
+      "cca3": "HUN",
+      "fifa": "",
+      "altSpellings": [
+        "HU"
+      ]
     },
     {
       "name": "Iceland",
@@ -1204,7 +2853,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 65.0,
       "lng": -18.0,
-      "restName": "Iceland"
+      "restName": "Iceland",
+      "officialName": "Iceland",
+      "cca2": "IS",
+      "cca3": "ISL",
+      "fifa": "",
+      "altSpellings": [
+        "IS",
+        "Island",
+        "Republic of Iceland",
+        "Lýðveldið Ísland"
+      ]
     },
     {
       "name": "India",
@@ -1226,7 +2885,18 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Asia",
       "lat": 20.0,
       "lng": 77.0,
-      "restName": "India"
+      "restName": "India",
+      "officialName": "Republic of India",
+      "cca2": "IN",
+      "cca3": "IND",
+      "fifa": "",
+      "altSpellings": [
+        "IN",
+        "Bhārat",
+        "Republic of India",
+        "Bharat Ganrajya",
+        "இந்தியா"
+      ]
     },
     {
       "name": "Indonesia",
@@ -1248,7 +2918,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": -5.0,
       "lng": 120.0,
-      "restName": "Indonesia"
+      "restName": "Indonesia",
+      "officialName": "Republic of Indonesia",
+      "cca2": "ID",
+      "cca3": "IDN",
+      "fifa": "",
+      "altSpellings": [
+        "ID",
+        "Republic of Indonesia",
+        "Republik Indonesia"
+      ]
     },
     {
       "name": "Iran",
@@ -1270,7 +2949,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Asia",
       "lat": 32.0,
       "lng": 53.0,
-      "restName": "Iran"
+      "restName": "Iran",
+      "officialName": "Islamic Republic of Iran",
+      "cca2": "IR",
+      "cca3": "IRN",
+      "fifa": "",
+      "altSpellings": [
+        "IR",
+        "Islamic Republic of Iran",
+        "Iran, Islamic Republic of",
+        "Jomhuri-ye Eslāmi-ye Irān"
+      ]
     },
     {
       "name": "Iraq",
@@ -1292,7 +2981,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 33.0,
       "lng": 44.0,
-      "restName": "Iraq"
+      "restName": "Iraq",
+      "officialName": "Republic of Iraq",
+      "cca2": "IQ",
+      "cca3": "IRQ",
+      "fifa": "",
+      "altSpellings": [
+        "IQ",
+        "Republic of Iraq",
+        "Jumhūriyyat al-‘Irāq"
+      ]
     },
     {
       "name": "Ireland",
@@ -1314,7 +3012,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 53.0,
       "lng": -8.0,
-      "restName": "Ireland"
+      "restName": "Ireland",
+      "officialName": "Republic of Ireland",
+      "cca2": "IE",
+      "cca3": "IRL",
+      "fifa": "",
+      "altSpellings": [
+        "IE",
+        "Éire",
+        "Republic of Ireland",
+        "Poblacht na hÉireann"
+      ]
     },
     {
       "name": "Israel",
@@ -1336,7 +3044,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 31.47,
       "lng": 35.13,
-      "restName": "Israel"
+      "restName": "Israel",
+      "officialName": "State of Israel",
+      "cca2": "IL",
+      "cca3": "ISR",
+      "fifa": "",
+      "altSpellings": [
+        "IL",
+        "State of Israel",
+        "Medīnat Yisrā'el"
+      ]
     },
     {
       "name": "Italy",
@@ -1358,7 +3075,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Europe",
       "lat": 42.83333333,
       "lng": 12.83333333,
-      "restName": "Italy"
+      "restName": "Italy",
+      "officialName": "Italian Republic",
+      "cca2": "IT",
+      "cca3": "ITA",
+      "fifa": "",
+      "altSpellings": [
+        "IT",
+        "Italian Republic",
+        "Repubblica italiana"
+      ]
     },
     {
       "name": "Jamaica",
@@ -1380,7 +3106,14 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Caribbean",
       "lat": 18.25,
       "lng": -77.5,
-      "restName": "Jamaica"
+      "restName": "Jamaica",
+      "officialName": "Jamaica",
+      "cca2": "JM",
+      "cca3": "JAM",
+      "fifa": "",
+      "altSpellings": [
+        "JM"
+      ]
     },
     {
       "name": "Japan",
@@ -1402,7 +3135,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Asia",
       "lat": 36.0,
       "lng": 138.0,
-      "restName": "Japan"
+      "restName": "Japan",
+      "officialName": "Japan",
+      "cca2": "JP",
+      "cca3": "JPN",
+      "fifa": "",
+      "altSpellings": [
+        "JP",
+        "Nippon",
+        "Nihon"
+      ]
     },
     {
       "name": "Jordan",
@@ -1424,7 +3166,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 31.0,
       "lng": 36.0,
-      "restName": "Jordan"
+      "restName": "Jordan",
+      "officialName": "Hashemite Kingdom of Jordan",
+      "cca2": "JO",
+      "cca3": "JOR",
+      "fifa": "",
+      "altSpellings": [
+        "JO",
+        "Hashemite Kingdom of Jordan",
+        "al-Mamlakah al-Urdunīyah al-Hāshimīyah"
+      ]
     },
     {
       "name": "Kazakhstan",
@@ -1446,7 +3197,21 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Asia",
       "lat": 48.0,
       "lng": 68.0,
-      "restName": "Kazakhstan"
+      "restName": "Kazakhstan",
+      "officialName": "Republic of Kazakhstan",
+      "cca2": "KZ",
+      "cca3": "KAZ",
+      "fifa": "",
+      "altSpellings": [
+        "KZ",
+        "Qazaqstan",
+        "Казахстан",
+        "Republic of Kazakhstan",
+        "Қазақстан Республикасы",
+        "Qazaqstan Respublïkası",
+        "Республика Казахстан",
+        "Respublika Kazakhstan"
+      ]
     },
     {
       "name": "Kenya",
@@ -1468,7 +3233,47 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": 1.0,
       "lng": 38.0,
-      "restName": "Kenya"
+      "restName": "Kenya",
+      "officialName": "Republic of Kenya",
+      "cca2": "KE",
+      "cca3": "KEN",
+      "fifa": "",
+      "altSpellings": [
+        "KE",
+        "Republic of Kenya",
+        "Jamhuri ya Kenya"
+      ]
+    },
+    {
+      "name": "Kiribati",
+      "iso": "KIR",
+      "year": 2024,
+      "generationTwh": 0.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 75.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 25.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "lat": 1.41666666,
+      "lng": 173.0,
+      "restName": "Kiribati",
+      "officialName": "Independent and Sovereign Republic of Kiribati",
+      "cca2": "KI",
+      "cca3": "KIR",
+      "fifa": "",
+      "altSpellings": [
+        "KI",
+        "Republic of Kiribati",
+        "Ribaberiki Kiribati"
+      ]
     },
     {
       "name": "Kuwait",
@@ -1490,7 +3295,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 29.5,
       "lng": 45.75,
-      "restName": "Kuwait"
+      "restName": "Kuwait",
+      "officialName": "State of Kuwait",
+      "cca2": "KW",
+      "cca3": "KWT",
+      "fifa": "",
+      "altSpellings": [
+        "KW",
+        "State of Kuwait",
+        "Dawlat al-Kuwait"
+      ]
     },
     {
       "name": "Kyrgyzstan",
@@ -1512,7 +3326,18 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Asia",
       "lat": 41.0,
       "lng": 75.0,
-      "restName": "Kyrgyzstan"
+      "restName": "Kyrgyzstan",
+      "officialName": "Kyrgyz Republic",
+      "cca2": "KG",
+      "cca3": "KGZ",
+      "fifa": "",
+      "altSpellings": [
+        "KG",
+        "Киргизия",
+        "Kyrgyz Republic",
+        "Кыргыз Республикасы",
+        "Kyrgyz Respublikasy"
+      ]
     },
     {
       "name": "Laos",
@@ -1534,7 +3359,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 18.0,
       "lng": 105.0,
-      "restName": "Laos"
+      "restName": "Laos",
+      "officialName": "Lao People's Democratic Republic",
+      "cca2": "LA",
+      "cca3": "LAO",
+      "fifa": "",
+      "altSpellings": [
+        "LA",
+        "Lao",
+        "Lao People's Democratic Republic",
+        "Sathalanalat Paxathipatai Paxaxon Lao"
+      ]
     },
     {
       "name": "Latvia",
@@ -1556,7 +3391,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 57.0,
       "lng": 25.0,
-      "restName": "Latvia"
+      "restName": "Latvia",
+      "officialName": "Republic of Latvia",
+      "cca2": "LV",
+      "cca3": "LVA",
+      "fifa": "",
+      "altSpellings": [
+        "LV",
+        "Republic of Latvia",
+        "Latvijas Republika"
+      ]
     },
     {
       "name": "Lebanon",
@@ -1578,7 +3422,77 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 33.83333333,
       "lng": 35.83333333,
-      "restName": "Lebanon"
+      "restName": "Lebanon",
+      "officialName": "Lebanese Republic",
+      "cca2": "LB",
+      "cca3": "LBN",
+      "fifa": "",
+      "altSpellings": [
+        "LB",
+        "Lebanese Republic",
+        "Al-Jumhūrīyah Al-Libnānīyah"
+      ]
+    },
+    {
+      "name": "Lesotho",
+      "iso": "LSO",
+      "year": 2022,
+      "generationTwh": 0.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 0.0,
+        "nuclear": 0.0,
+        "hydro": 100.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Southern Africa",
+      "lat": -29.5,
+      "lng": 28.5,
+      "restName": "Lesotho",
+      "officialName": "Kingdom of Lesotho",
+      "cca2": "LS",
+      "cca3": "LSO",
+      "fifa": "",
+      "altSpellings": [
+        "LS",
+        "Kingdom of Lesotho",
+        "Muso oa Lesotho"
+      ]
+    },
+    {
+      "name": "Liberia",
+      "iso": "LBR",
+      "year": 2024,
+      "generationTwh": 0.6,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 45.6,
+        "nuclear": 0.0,
+        "hydro": 52.6,
+        "wind": 0.0,
+        "solar": 1.8,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 6.5,
+      "lng": -9.5,
+      "restName": "Liberia",
+      "officialName": "Republic of Liberia",
+      "cca2": "LR",
+      "cca3": "LBR",
+      "fifa": "",
+      "altSpellings": [
+        "LR",
+        "Republic of Liberia"
+      ]
     },
     {
       "name": "Libya",
@@ -1600,7 +3514,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Africa",
       "lat": 25.0,
       "lng": 17.0,
-      "restName": "Libya"
+      "restName": "Libya",
+      "officialName": "State of Libya",
+      "cca2": "LY",
+      "cca3": "LBY",
+      "fifa": "",
+      "altSpellings": [
+        "LY",
+        "State of Libya",
+        "Dawlat Libya"
+      ]
     },
     {
       "name": "Lithuania",
@@ -1622,51 +3545,83 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 56.0,
       "lng": 24.0,
-      "restName": "Lithuania"
+      "restName": "Lithuania",
+      "officialName": "Republic of Lithuania",
+      "cca2": "LT",
+      "cca3": "LTU",
+      "fifa": "",
+      "altSpellings": [
+        "LT",
+        "Republic of Lithuania",
+        "Lietuvos Respublika"
+      ]
     },
     {
       "name": "Luxembourg",
       "iso": "LUX",
-      "year": 2012,
-      "generationTwh": 2.8,
+      "year": 2025,
+      "generationTwh": 1.5,
       "mix": {
         "coal": 0.0,
-        "gas": 86.6,
-        "oil": 2.2,
+        "gas": 3.9,
+        "oil": 4.5,
         "nuclear": 0.0,
-        "hydro": 3.6,
-        "wind": 2.9,
-        "solar": 1.4,
-        "biofuel": 3.3,
+        "hydro": 3.2,
+        "wind": 30.6,
+        "solar": 30.5,
+        "biofuel": 27.3,
         "otherRenewables": 0.0
       },
       "region": "Europe",
       "subregion": "Western Europe",
       "lat": 49.75,
       "lng": 6.16666666,
-      "restName": "Luxembourg"
+      "restName": "Luxembourg",
+      "officialName": "Grand Duchy of Luxembourg",
+      "cca2": "LU",
+      "cca3": "LUX",
+      "fifa": "",
+      "altSpellings": [
+        "LU",
+        "Grand Duchy of Luxembourg",
+        "Grand-Duché de Luxembourg",
+        "Großherzogtum Luxemburg",
+        "Groussherzogtum Lëtzebuerg"
+      ]
     },
     {
       "name": "Macao",
       "iso": "MAC",
-      "year": 2005,
-      "generationTwh": 2.0,
+      "year": 2024,
+      "generationTwh": 0.8,
       "mix": {
         "coal": 0.0,
-        "gas": 0.0,
-        "oil": 92.1,
+        "gas": 62.8,
+        "oil": 6.4,
         "nuclear": 0.0,
         "hydro": 0.0,
         "wind": 0.0,
         "solar": 0.0,
-        "biofuel": 7.9,
+        "biofuel": 30.8,
         "otherRenewables": 0.0
       },
       "region": "Asia",
       "subregion": "Eastern Asia",
       "lat": 22.16666666,
       "lng": 113.55,
-      "restName": "Macau"
+      "restName": "Macau",
+      "officialName": "Macao Special Administrative Region of the People's Republic of China",
+      "cca2": "MO",
+      "cca3": "MAC",
+      "fifa": "",
+      "altSpellings": [
+        "MO",
+        "澳门",
+        "Macao",
+        "Macao Special Administrative Region of the People's Republic of China",
+        "中華人民共和國澳門特別行政區",
+        "Região Administrativa Especial de Macau da República Popular da China"
+      ]
     },
     {
       "name": "Madagascar",
@@ -1688,29 +3643,47 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": -20.0,
       "lng": 47.0,
-      "restName": "Madagascar"
+      "restName": "Madagascar",
+      "officialName": "Republic of Madagascar",
+      "cca2": "MG",
+      "cca3": "MDG",
+      "fifa": "",
+      "altSpellings": [
+        "MG",
+        "Republic of Madagascar",
+        "Repoblikan'i Madagasikara",
+        "République de Madagascar"
+      ]
     },
     {
       "name": "Malawi",
       "iso": "MWI",
-      "year": 2016,
-      "generationTwh": 2.1,
+      "year": 2024,
+      "generationTwh": 1.8,
       "mix": {
         "coal": 0.0,
         "gas": 0.0,
-        "oil": 6.0,
+        "oil": 4.4,
         "nuclear": 0.0,
-        "hydro": 90.3,
+        "hydro": 92.4,
         "wind": 0.0,
-        "solar": 1.4,
-        "biofuel": 2.3,
+        "solar": 0.5,
+        "biofuel": 2.7,
         "otherRenewables": 0.0
       },
       "region": "Africa",
       "subregion": "Eastern Africa",
       "lat": -13.5,
       "lng": 34.0,
-      "restName": "Malawi"
+      "restName": "Malawi",
+      "officialName": "Republic of Malawi",
+      "cca2": "MW",
+      "cca3": "MWI",
+      "fifa": "",
+      "altSpellings": [
+        "MW",
+        "Republic of Malawi"
+      ]
     },
     {
       "name": "Malaysia",
@@ -1732,7 +3705,46 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 2.5,
       "lng": 112.5,
-      "restName": "Malaysia"
+      "restName": "Malaysia",
+      "officialName": "Malaysia",
+      "cca2": "MY",
+      "cca3": "MYS",
+      "fifa": "",
+      "altSpellings": [
+        "MY"
+      ]
+    },
+    {
+      "name": "Maldives",
+      "iso": "MDV",
+      "year": 2024,
+      "generationTwh": 0.8,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 92.9,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 7.1,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "lat": 3.25,
+      "lng": 73.0,
+      "restName": "Maldives",
+      "officialName": "Republic of the Maldives",
+      "cca2": "MV",
+      "cca3": "MDV",
+      "fifa": "",
+      "altSpellings": [
+        "MV",
+        "Maldive Islands",
+        "Republic of the Maldives",
+        "Dhivehi Raajjeyge Jumhooriyya"
+      ]
     },
     {
       "name": "Mali",
@@ -1754,7 +3766,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Africa",
       "lat": 17.0,
       "lng": -4.0,
-      "restName": "Mali"
+      "restName": "Mali",
+      "officialName": "Republic of Mali",
+      "cca2": "ML",
+      "cca3": "MLI",
+      "fifa": "",
+      "altSpellings": [
+        "ML",
+        "Republic of Mali",
+        "République du Mali"
+      ]
     },
     {
       "name": "Malta",
@@ -1776,7 +3797,45 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Europe",
       "lat": 35.83333333,
       "lng": 14.58333333,
-      "restName": "Malta"
+      "restName": "Malta",
+      "officialName": "Republic of Malta",
+      "cca2": "MT",
+      "cca3": "MLT",
+      "fifa": "",
+      "altSpellings": [
+        "MT",
+        "Republic of Malta",
+        "Repubblika ta' Malta"
+      ]
+    },
+    {
+      "name": "Martinique",
+      "iso": "MTQ",
+      "year": 2023,
+      "generationTwh": 1.5,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 74.1,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 2.0,
+        "solar": 7.3,
+        "biofuel": 15.9,
+        "otherRenewables": 0.7
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 14.666667,
+      "lng": -61.0,
+      "restName": "Martinique",
+      "officialName": "Martinique",
+      "cca2": "MQ",
+      "cca3": "MTQ",
+      "fifa": "",
+      "altSpellings": [
+        "MQ"
+      ]
     },
     {
       "name": "Mauritania",
@@ -1798,7 +3857,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Africa",
       "lat": 20.0,
       "lng": -12.0,
-      "restName": "Mauritania"
+      "restName": "Mauritania",
+      "officialName": "Islamic Republic of Mauritania",
+      "cca2": "MR",
+      "cca3": "MRT",
+      "fifa": "",
+      "altSpellings": [
+        "MR",
+        "Islamic Republic of Mauritania",
+        "al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah"
+      ]
     },
     {
       "name": "Mauritius",
@@ -1820,7 +3888,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": -20.28333333,
       "lng": 57.55,
-      "restName": "Mauritius"
+      "restName": "Mauritius",
+      "officialName": "Republic of Mauritius",
+      "cca2": "MU",
+      "cca3": "MUS",
+      "fifa": "",
+      "altSpellings": [
+        "MU",
+        "Republic of Mauritius",
+        "République de Maurice"
+      ]
     },
     {
       "name": "Mexico",
@@ -1842,7 +3919,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "North America",
       "lat": 23.0,
       "lng": -102.0,
-      "restName": "Mexico"
+      "restName": "Mexico",
+      "officialName": "United Mexican States",
+      "cca2": "MX",
+      "cca3": "MEX",
+      "fifa": "",
+      "altSpellings": [
+        "MX",
+        "Mexicanos",
+        "United Mexican States",
+        "Estados Unidos Mexicanos"
+      ]
     },
     {
       "name": "Moldova",
@@ -1864,7 +3951,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Europe",
       "lat": 47.0,
       "lng": 29.0,
-      "restName": "Moldova"
+      "restName": "Moldova",
+      "officialName": "Republic of Moldova",
+      "cca2": "MD",
+      "cca3": "MDA",
+      "fifa": "",
+      "altSpellings": [
+        "MD",
+        "Moldova, Republic of",
+        "Republic of Moldova",
+        "Republica Moldova"
+      ]
     },
     {
       "name": "Mongolia",
@@ -1886,7 +3983,14 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Asia",
       "lat": 46.0,
       "lng": 105.0,
-      "restName": "Mongolia"
+      "restName": "Mongolia",
+      "officialName": "Mongolia",
+      "cca2": "MN",
+      "cca3": "MNG",
+      "fifa": "",
+      "altSpellings": [
+        "MN"
+      ]
     },
     {
       "name": "Montenegro",
@@ -1908,7 +4012,44 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southeast Europe",
       "lat": 42.5,
       "lng": 19.3,
-      "restName": "Montenegro"
+      "restName": "Montenegro",
+      "officialName": "Montenegro",
+      "cca2": "ME",
+      "cca3": "MNE",
+      "fifa": "",
+      "altSpellings": [
+        "ME",
+        "Crna Gora"
+      ]
+    },
+    {
+      "name": "Montserrat",
+      "iso": "MSR",
+      "year": 2024,
+      "generationTwh": 0.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 16.75,
+      "lng": -62.2,
+      "restName": "Montserrat",
+      "officialName": "Montserrat",
+      "cca2": "MS",
+      "cca3": "MSR",
+      "fifa": "",
+      "altSpellings": [
+        "MS"
+      ]
     },
     {
       "name": "Morocco",
@@ -1930,7 +4071,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Africa",
       "lat": 32.0,
       "lng": -5.0,
-      "restName": "Morocco"
+      "restName": "Morocco",
+      "officialName": "Kingdom of Morocco",
+      "cca2": "MA",
+      "cca3": "MAR",
+      "fifa": "",
+      "altSpellings": [
+        "MA",
+        "Kingdom of Morocco",
+        "Al-Mamlakah al-Maġribiyah"
+      ]
     },
     {
       "name": "Mozambique",
@@ -1952,7 +4102,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": -18.25,
       "lng": 35.0,
-      "restName": "Mozambique"
+      "restName": "Mozambique",
+      "officialName": "Republic of Mozambique",
+      "cca2": "MZ",
+      "cca3": "MOZ",
+      "fifa": "",
+      "altSpellings": [
+        "MZ",
+        "Republic of Mozambique",
+        "República de Moçambique"
+      ]
     },
     {
       "name": "Myanmar",
@@ -1974,21 +4133,31 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 22.0,
       "lng": 98.0,
-      "restName": "Myanmar"
+      "restName": "Myanmar",
+      "officialName": "Republic of the Union of Myanmar",
+      "cca2": "MM",
+      "cca3": "MMR",
+      "fifa": "",
+      "altSpellings": [
+        "MM",
+        "Burma",
+        "Republic of the Union of Myanmar",
+        "Pyidaunzu Thanmăda Myăma Nainngandaw"
+      ]
     },
     {
       "name": "Namibia",
       "iso": "NAM",
-      "year": 2020,
-      "generationTwh": 2.0,
+      "year": 2024,
+      "generationTwh": 1.6,
       "mix": {
-        "coal": 3.0,
+        "coal": 2.4,
         "gas": 0.0,
-        "oil": 0.5,
+        "oil": 0.0,
         "nuclear": 0.0,
-        "hydro": 75.0,
-        "wind": 1.0,
-        "solar": 20.5,
+        "hydro": 61.0,
+        "wind": 1.2,
+        "solar": 35.4,
         "biofuel": 0.0,
         "otherRenewables": 0.0
       },
@@ -1996,7 +4165,49 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Africa",
       "lat": -22.0,
       "lng": 17.0,
-      "restName": "Namibia"
+      "restName": "Namibia",
+      "officialName": "Republic of Namibia",
+      "cca2": "NA",
+      "cca3": "NAM",
+      "fifa": "",
+      "altSpellings": [
+        "NA",
+        "Namibië",
+        "Republic of Namibia"
+      ]
+    },
+    {
+      "name": "Nauru",
+      "iso": "NRU",
+      "year": 2024,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 80.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 20.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "lat": -0.53333333,
+      "lng": 166.91666666,
+      "restName": "Nauru",
+      "officialName": "Republic of Nauru",
+      "cca2": "NR",
+      "cca3": "NRU",
+      "fifa": "",
+      "altSpellings": [
+        "NR",
+        "Naoero",
+        "Pleasant Island",
+        "Republic of Nauru",
+        "Ripublik Naoero"
+      ]
     },
     {
       "name": "Nepal",
@@ -2018,7 +4229,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Asia",
       "lat": 28.0,
       "lng": 84.0,
-      "restName": "Nepal"
+      "restName": "Nepal",
+      "officialName": "Federal Democratic Republic of Nepal",
+      "cca2": "NP",
+      "cca3": "NPL",
+      "fifa": "",
+      "altSpellings": [
+        "NP",
+        "Federal Democratic Republic of Nepal",
+        "Loktāntrik Ganatantra Nepāl"
+      ]
     },
     {
       "name": "Netherlands",
@@ -2040,7 +4260,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Europe",
       "lat": 52.5,
       "lng": 5.75,
-      "restName": "Netherlands"
+      "restName": "Netherlands",
+      "officialName": "Kingdom of the Netherlands",
+      "cca2": "NL",
+      "cca3": "NLD",
+      "fifa": "",
+      "altSpellings": [
+        "NL",
+        "Holland",
+        "Nederland",
+        "The Netherlands"
+      ]
     },
     {
       "name": "New Caledonia",
@@ -2062,7 +4292,14 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Melanesia",
       "lat": -21.5,
       "lng": 165.5,
-      "restName": "New Caledonia"
+      "restName": "New Caledonia",
+      "officialName": "New Caledonia",
+      "cca2": "NC",
+      "cca3": "NCL",
+      "fifa": "",
+      "altSpellings": [
+        "NC"
+      ]
     },
     {
       "name": "New Zealand",
@@ -2084,7 +4321,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Australia and New Zealand",
       "lat": -41.0,
       "lng": 174.0,
-      "restName": "New Zealand"
+      "restName": "New Zealand",
+      "officialName": "New Zealand",
+      "cca2": "NZ",
+      "cca3": "NZL",
+      "fifa": "",
+      "altSpellings": [
+        "NZ",
+        "Aotearoa"
+      ]
     },
     {
       "name": "Nicaragua",
@@ -2106,7 +4351,46 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central America",
       "lat": 13.0,
       "lng": -85.0,
-      "restName": "Nicaragua"
+      "restName": "Nicaragua",
+      "officialName": "Republic of Nicaragua",
+      "cca2": "NI",
+      "cca3": "NIC",
+      "fifa": "",
+      "altSpellings": [
+        "NI",
+        "Republic of Nicaragua",
+        "República de Nicaragua"
+      ]
+    },
+    {
+      "name": "Niger",
+      "iso": "NER",
+      "year": 2024,
+      "generationTwh": 0.9,
+      "mix": {
+        "coal": 17.9,
+        "gas": 5.3,
+        "oil": 73.6,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 3.2,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 16.0,
+      "lng": 8.0,
+      "restName": "Niger",
+      "officialName": "Republic of Niger",
+      "cca2": "NE",
+      "cca3": "NER",
+      "fifa": "",
+      "altSpellings": [
+        "NE",
+        "Nijar"
+      ]
     },
     {
       "name": "Nigeria",
@@ -2128,7 +4412,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Africa",
       "lat": 10.0,
       "lng": 8.0,
-      "restName": "Nigeria"
+      "restName": "Nigeria",
+      "officialName": "Federal Republic of Nigeria",
+      "cca2": "NG",
+      "cca3": "NGA",
+      "fifa": "",
+      "altSpellings": [
+        "NG",
+        "Nijeriya",
+        "Naíjíríà",
+        "Federal Republic of Nigeria"
+      ]
     },
     {
       "name": "North Korea",
@@ -2150,7 +4444,21 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Asia",
       "lat": 40.0,
       "lng": 127.0,
-      "restName": "North Korea"
+      "restName": "North Korea",
+      "officialName": "Democratic People's Republic of Korea",
+      "cca2": "KP",
+      "cca3": "PRK",
+      "fifa": "",
+      "altSpellings": [
+        "KP",
+        "Democratic People's Republic of Korea",
+        "DPRK",
+        "조선민주주의인민공화국",
+        "Chosŏn Minjujuŭi Inmin Konghwaguk",
+        "Korea, Democratic People's Republic of",
+        "북한",
+        "북조선"
+      ]
     },
     {
       "name": "North Macedonia",
@@ -2172,7 +4480,19 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southeast Europe",
       "lat": 41.83333333,
       "lng": 22.0,
-      "restName": "North Macedonia"
+      "restName": "North Macedonia",
+      "officialName": "Republic of North Macedonia",
+      "cca2": "MK",
+      "cca3": "MKD",
+      "fifa": "",
+      "altSpellings": [
+        "MK",
+        "The former Yugoslav Republic of Macedonia",
+        "Republic of North Macedonia",
+        "Macedonia, The Former Yugoslav Republic of",
+        "Република Северна Македонија",
+        "Macedonia"
+      ]
     },
     {
       "name": "Norway",
@@ -2194,7 +4514,19 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 62.0,
       "lng": 10.0,
-      "restName": "Norway"
+      "restName": "Norway",
+      "officialName": "Kingdom of Norway",
+      "cca2": "NO",
+      "cca3": "NOR",
+      "fifa": "",
+      "altSpellings": [
+        "NO",
+        "Norge",
+        "Noreg",
+        "Kingdom of Norway",
+        "Kongeriket Norge",
+        "Kongeriket Noreg"
+      ]
     },
     {
       "name": "Oman",
@@ -2216,7 +4548,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 21.0,
       "lng": 57.0,
-      "restName": "Oman"
+      "restName": "Oman",
+      "officialName": "Sultanate of Oman",
+      "cca2": "OM",
+      "cca3": "OMN",
+      "fifa": "",
+      "altSpellings": [
+        "OM",
+        "Sultanate of Oman",
+        "Salṭanat ʻUmān"
+      ]
     },
     {
       "name": "Pakistan",
@@ -2238,7 +4579,49 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Asia",
       "lat": 30.0,
       "lng": 70.0,
-      "restName": "Pakistan"
+      "restName": "Pakistan",
+      "officialName": "Islamic Republic of Pakistan",
+      "cca2": "PK",
+      "cca3": "PAK",
+      "fifa": "",
+      "altSpellings": [
+        "PK",
+        "Pākistān",
+        "Islamic Republic of Pakistan",
+        "Islāmī Jumhūriya'eh Pākistān"
+      ]
+    },
+    {
+      "name": "Palestine",
+      "iso": "PSE",
+      "year": 2024,
+      "generationTwh": 1.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 60.6,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 39.4,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "lat": 31.9,
+      "lng": 35.2,
+      "restName": "Palestine",
+      "officialName": "State of Palestine",
+      "cca2": "PS",
+      "cca3": "PSE",
+      "fifa": "",
+      "altSpellings": [
+        "PS",
+        "Palestine, State of",
+        "State of Palestine",
+        "Dawlat Filasṭin"
+      ]
     },
     {
       "name": "Panama",
@@ -2260,7 +4643,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central America",
       "lat": 9.0,
       "lng": -80.0,
-      "restName": "Panama"
+      "restName": "Panama",
+      "officialName": "Republic of Panama",
+      "cca2": "PA",
+      "cca3": "PAN",
+      "fifa": "",
+      "altSpellings": [
+        "PA",
+        "Republic of Panama",
+        "República de Panamá"
+      ]
     },
     {
       "name": "Papua New Guinea",
@@ -2282,7 +4674,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Melanesia",
       "lat": -6.0,
       "lng": 147.0,
-      "restName": "Papua New Guinea"
+      "restName": "Papua New Guinea",
+      "officialName": "Independent State of Papua New Guinea",
+      "cca2": "PG",
+      "cca3": "PNG",
+      "fifa": "",
+      "altSpellings": [
+        "PG",
+        "Independent State of Papua New Guinea",
+        "Independen Stet bilong Papua Niugini"
+      ]
     },
     {
       "name": "Paraguay",
@@ -2304,7 +4705,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": -23.0,
       "lng": -58.0,
-      "restName": "Paraguay"
+      "restName": "Paraguay",
+      "officialName": "Republic of Paraguay",
+      "cca2": "PY",
+      "cca3": "PRY",
+      "fifa": "",
+      "altSpellings": [
+        "PY",
+        "Republic of Paraguay",
+        "República del Paraguay",
+        "Tetã Paraguái"
+      ]
     },
     {
       "name": "Peru",
@@ -2326,7 +4737,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": -10.0,
       "lng": -76.0,
-      "restName": "Peru"
+      "restName": "Peru",
+      "officialName": "Republic of Peru",
+      "cca2": "PE",
+      "cca3": "PER",
+      "fifa": "",
+      "altSpellings": [
+        "PE",
+        "Republic of Peru",
+        "República del Perú"
+      ]
     },
     {
       "name": "Philippines",
@@ -2348,7 +4768,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 13.0,
       "lng": 122.0,
-      "restName": "Philippines"
+      "restName": "Philippines",
+      "officialName": "Republic of the Philippines",
+      "cca2": "PH",
+      "cca3": "PHL",
+      "fifa": "",
+      "altSpellings": [
+        "PH",
+        "Republic of the Philippines",
+        "Repúblika ng Pilipinas"
+      ]
     },
     {
       "name": "Poland",
@@ -2370,7 +4799,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Europe",
       "lat": 52.0,
       "lng": 20.0,
-      "restName": "Poland"
+      "restName": "Poland",
+      "officialName": "Republic of Poland",
+      "cca2": "PL",
+      "cca3": "POL",
+      "fifa": "",
+      "altSpellings": [
+        "PL",
+        "Republic of Poland",
+        "Rzeczpospolita Polska"
+      ]
     },
     {
       "name": "Portugal",
@@ -2392,7 +4830,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Europe",
       "lat": 39.5,
       "lng": -8.0,
-      "restName": "Portugal"
+      "restName": "Portugal",
+      "officialName": "Portuguese Republic",
+      "cca2": "PT",
+      "cca3": "PRT",
+      "fifa": "",
+      "altSpellings": [
+        "PT",
+        "Portuguesa",
+        "Portuguese Republic",
+        "República Portuguesa"
+      ]
     },
     {
       "name": "Puerto Rico",
@@ -2414,7 +4862,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Caribbean",
       "lat": 18.25,
       "lng": -66.5,
-      "restName": "Puerto Rico"
+      "restName": "Puerto Rico",
+      "officialName": "Commonwealth of Puerto Rico",
+      "cca2": "PR",
+      "cca3": "PRI",
+      "fifa": "",
+      "altSpellings": [
+        "PR",
+        "Commonwealth of Puerto Rico",
+        "Estado Libre Asociado de Puerto Rico"
+      ]
     },
     {
       "name": "Qatar",
@@ -2436,7 +4893,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 25.5,
       "lng": 51.25,
-      "restName": "Qatar"
+      "restName": "Qatar",
+      "officialName": "State of Qatar",
+      "cca2": "QA",
+      "cca3": "QAT",
+      "fifa": "",
+      "altSpellings": [
+        "QA",
+        "State of Qatar",
+        "Dawlat Qaṭar"
+      ]
     },
     {
       "name": "Reunion",
@@ -2458,7 +4924,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": -21.15,
       "lng": 55.5,
-      "restName": "Réunion"
+      "restName": "Réunion",
+      "officialName": "Réunion Island",
+      "cca2": "RE",
+      "cca3": "REU",
+      "fifa": "",
+      "altSpellings": [
+        "RE",
+        "Reunion"
+      ]
     },
     {
       "name": "Romania",
@@ -2480,7 +4954,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southeast Europe",
       "lat": 46.0,
       "lng": 25.0,
-      "restName": "Romania"
+      "restName": "Romania",
+      "officialName": "Romania",
+      "cca2": "RO",
+      "cca3": "ROU",
+      "fifa": "",
+      "altSpellings": [
+        "RO",
+        "Rumania",
+        "Roumania",
+        "România"
+      ]
     },
     {
       "name": "Russia",
@@ -2502,7 +4986,259 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Europe",
       "lat": 60.0,
       "lng": 100.0,
-      "restName": "Russia"
+      "restName": "Russia",
+      "officialName": "Russian Federation",
+      "cca2": "RU",
+      "cca3": "RUS",
+      "fifa": "",
+      "altSpellings": [
+        "RU",
+        "Russian Federation",
+        "Российская Федерация"
+      ]
+    },
+    {
+      "name": "Rwanda",
+      "iso": "RWA",
+      "year": 2024,
+      "generationTwh": 1.1,
+      "mix": {
+        "coal": 15.0,
+        "gas": 26.5,
+        "oil": 8.8,
+        "nuclear": 0.0,
+        "hydro": 46.2,
+        "wind": 0.0,
+        "solar": 3.5,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "lat": -2.0,
+      "lng": 30.0,
+      "restName": "Rwanda",
+      "officialName": "Republic of Rwanda",
+      "cca2": "RW",
+      "cca3": "RWA",
+      "fifa": "",
+      "altSpellings": [
+        "RW",
+        "Republic of Rwanda",
+        "Repubulika y'u Rwanda",
+        "République du Rwanda"
+      ]
+    },
+    {
+      "name": "Saint Helena",
+      "iso": "SHN",
+      "year": 2023,
+      "generationTwh": 0.0,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": -15.95,
+      "lng": -5.72,
+      "restName": "Saint Helena, Ascension and Tristan da Cunha",
+      "officialName": "Saint Helena, Ascension and Tristan da Cunha",
+      "cca2": "SH",
+      "cca3": "SHN",
+      "fifa": "",
+      "altSpellings": [
+        "Saint Helena",
+        "St. Helena, Ascension and Tristan da Cunha"
+      ]
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "iso": "KNA",
+      "year": 2024,
+      "generationTwh": 0.2,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 91.4,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 4.3,
+        "solar": 4.3,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 17.33333333,
+      "lng": -62.75,
+      "restName": "Saint Kitts and Nevis",
+      "officialName": "Federation of Saint Christopher and Nevis",
+      "cca2": "KN",
+      "cca3": "KNA",
+      "fifa": "",
+      "altSpellings": [
+        "KN",
+        "Federation of Saint Christopher and Nevis"
+      ]
+    },
+    {
+      "name": "Saint Lucia",
+      "iso": "LCA",
+      "year": 2024,
+      "generationTwh": 0.4,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 97.5,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 2.5,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 13.88333333,
+      "lng": -60.96666666,
+      "restName": "Saint Lucia",
+      "officialName": "Saint Lucia",
+      "cca2": "LC",
+      "cca3": "LCA",
+      "fifa": "",
+      "altSpellings": [
+        "LC"
+      ]
+    },
+    {
+      "name": "Saint Pierre and Miquelon",
+      "iso": "SPM",
+      "year": 2023,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "North America",
+      "lat": 46.83333333,
+      "lng": -56.33333333,
+      "restName": "Saint Pierre and Miquelon",
+      "officialName": "Saint Pierre and Miquelon",
+      "cca2": "PM",
+      "cca3": "SPM",
+      "fifa": "",
+      "altSpellings": [
+        "PM",
+        "Collectivité territoriale de Saint-Pierre-et-Miquelon"
+      ]
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "iso": "VCT",
+      "year": 2024,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 86.7,
+        "nuclear": 0.0,
+        "hydro": 13.3,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 13.25,
+      "lng": -61.2,
+      "restName": "Saint Vincent and the Grenadines",
+      "officialName": "Saint Vincent and the Grenadines",
+      "cca2": "VC",
+      "cca3": "VCT",
+      "fifa": "",
+      "altSpellings": [
+        "VC"
+      ]
+    },
+    {
+      "name": "Samoa",
+      "iso": "WSM",
+      "year": 2024,
+      "generationTwh": 0.2,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 56.2,
+        "nuclear": 0.0,
+        "hydro": 18.8,
+        "wind": 0.0,
+        "solar": 18.8,
+        "biofuel": 6.2,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "lat": -13.58333333,
+      "lng": -172.33333333,
+      "restName": "Samoa",
+      "officialName": "Independent State of Samoa",
+      "cca2": "WS",
+      "cca3": "WSM",
+      "fifa": "",
+      "altSpellings": [
+        "WS",
+        "Independent State of Samoa",
+        "Malo Saʻoloto Tutoʻatasi o Sāmoa"
+      ]
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "iso": "STP",
+      "year": 2023,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 88.9,
+        "nuclear": 0.0,
+        "hydro": 11.1,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "lat": 1.0,
+      "lng": 7.0,
+      "restName": "São Tomé and Príncipe",
+      "officialName": "Democratic Republic of São Tomé and Príncipe",
+      "cca2": "ST",
+      "cca3": "STP",
+      "fifa": "",
+      "altSpellings": [
+        "ST",
+        "Democratic Republic of São Tomé and Príncipe",
+        "Sao Tome and Principe",
+        "República Democrática de São Tomé e Príncipe"
+      ]
     },
     {
       "name": "Saudi Arabia",
@@ -2524,7 +5260,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 25.0,
       "lng": 45.0,
-      "restName": "Saudi Arabia"
+      "restName": "Saudi Arabia",
+      "officialName": "Kingdom of Saudi Arabia",
+      "cca2": "SA",
+      "cca3": "SAU",
+      "fifa": "",
+      "altSpellings": [
+        "Saudi",
+        "SA",
+        "Kingdom of Saudi Arabia",
+        "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"
+      ]
     },
     {
       "name": "Senegal",
@@ -2546,7 +5292,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Africa",
       "lat": 14.0,
       "lng": -14.0,
-      "restName": "Senegal"
+      "restName": "Senegal",
+      "officialName": "Republic of Senegal",
+      "cca2": "SN",
+      "cca3": "SEN",
+      "fifa": "",
+      "altSpellings": [
+        "SN",
+        "Republic of Senegal",
+        "République du Sénégal"
+      ]
     },
     {
       "name": "Serbia",
@@ -2568,7 +5323,81 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southeast Europe",
       "lat": 44.0,
       "lng": 21.0,
-      "restName": "Serbia"
+      "restName": "Serbia",
+      "officialName": "Republic of Serbia",
+      "cca2": "RS",
+      "cca3": "SRB",
+      "fifa": "",
+      "altSpellings": [
+        "RS",
+        "Srbija",
+        "Republika Srbija",
+        "Србија",
+        "Република Србија",
+        "Republic of Serbia"
+      ]
+    },
+    {
+      "name": "Seychelles",
+      "iso": "SYC",
+      "year": 2024,
+      "generationTwh": 0.6,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 84.1,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 1.6,
+        "solar": 14.3,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "lat": -4.58333333,
+      "lng": 55.66666666,
+      "restName": "Seychelles",
+      "officialName": "Republic of Seychelles",
+      "cca2": "SC",
+      "cca3": "SYC",
+      "fifa": "",
+      "altSpellings": [
+        "SC",
+        "Republic of Seychelles",
+        "Repiblik Sesel",
+        "République des Seychelles"
+      ]
+    },
+    {
+      "name": "Sierra Leone",
+      "iso": "SLE",
+      "year": 2024,
+      "generationTwh": 0.2,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 4.8,
+        "nuclear": 0.0,
+        "hydro": 85.7,
+        "wind": 0.0,
+        "solar": 9.5,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 8.5,
+      "lng": -11.5,
+      "restName": "Sierra Leone",
+      "officialName": "Republic of Sierra Leone",
+      "cca2": "SL",
+      "cca3": "SLE",
+      "fifa": "",
+      "altSpellings": [
+        "SL",
+        "Republic of Sierra Leone"
+      ]
     },
     {
       "name": "Singapore",
@@ -2590,7 +5419,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 1.36666666,
       "lng": 103.8,
-      "restName": "Singapore"
+      "restName": "Singapore",
+      "officialName": "Republic of Singapore",
+      "cca2": "SG",
+      "cca3": "SGP",
+      "fifa": "",
+      "altSpellings": [
+        "SG",
+        "Singapura",
+        "Republik Singapura",
+        "新加坡共和国"
+      ]
     },
     {
       "name": "Slovakia",
@@ -2612,7 +5451,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Europe",
       "lat": 48.66666666,
       "lng": 19.5,
-      "restName": "Slovakia"
+      "restName": "Slovakia",
+      "officialName": "Slovak Republic",
+      "cca2": "SK",
+      "cca3": "SVK",
+      "fifa": "",
+      "altSpellings": [
+        "SK",
+        "Slovak Republic",
+        "Slovenská republika"
+      ]
     },
     {
       "name": "Slovenia",
@@ -2634,7 +5482,78 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Europe",
       "lat": 46.11666666,
       "lng": 14.81666666,
-      "restName": "Slovenia"
+      "restName": "Slovenia",
+      "officialName": "Republic of Slovenia",
+      "cca2": "SI",
+      "cca3": "SVN",
+      "fifa": "",
+      "altSpellings": [
+        "SI",
+        "Republic of Slovenia",
+        "Republika Slovenija"
+      ]
+    },
+    {
+      "name": "Solomon Islands",
+      "iso": "SLB",
+      "year": 2024,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 90.9,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 9.1,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "lat": -8.0,
+      "lng": 159.0,
+      "restName": "Solomon Islands",
+      "officialName": "Solomon Islands",
+      "cca2": "SB",
+      "cca3": "SLB",
+      "fifa": "",
+      "altSpellings": [
+        "SB"
+      ]
+    },
+    {
+      "name": "Somalia",
+      "iso": "SOM",
+      "year": 2024,
+      "generationTwh": 0.4,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 79.1,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 2.3,
+        "solar": 18.6,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "lat": 10.0,
+      "lng": 49.0,
+      "restName": "Somalia",
+      "officialName": "Federal Republic of Somalia",
+      "cca2": "SO",
+      "cca3": "SOM",
+      "fifa": "",
+      "altSpellings": [
+        "SO",
+        "aṣ-Ṣūmāl",
+        "Federal Republic of Somalia",
+        "Jamhuuriyadda Federaalka Soomaaliya",
+        "Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya"
+      ]
     },
     {
       "name": "South Africa",
@@ -2656,7 +5575,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Africa",
       "lat": -29.0,
       "lng": 24.0,
-      "restName": "South Africa"
+      "restName": "South Africa",
+      "officialName": "Republic of South Africa",
+      "cca2": "ZA",
+      "cca3": "ZAF",
+      "fifa": "",
+      "altSpellings": [
+        "ZA",
+        "RSA",
+        "Suid-Afrika",
+        "Republic of South Africa"
+      ]
     },
     {
       "name": "South Korea",
@@ -2678,7 +5607,47 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Asia",
       "lat": 37.0,
       "lng": 127.5,
-      "restName": "South Korea"
+      "restName": "South Korea",
+      "officialName": "Republic of Korea",
+      "cca2": "KR",
+      "cca3": "KOR",
+      "fifa": "",
+      "altSpellings": [
+        "KR",
+        "Korea, Republic of",
+        "Republic of Korea",
+        "남한",
+        "남조선"
+      ]
+    },
+    {
+      "name": "South Sudan",
+      "iso": "SSD",
+      "year": 2024,
+      "generationTwh": 0.6,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 98.2,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 1.8,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Middle Africa",
+      "lat": 7.0,
+      "lng": 30.0,
+      "restName": "South Sudan",
+      "officialName": "Republic of South Sudan",
+      "cca2": "SS",
+      "cca3": "SSD",
+      "fifa": "",
+      "altSpellings": [
+        "SS"
+      ]
     },
     {
       "name": "Spain",
@@ -2700,7 +5669,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Europe",
       "lat": 40.0,
       "lng": -4.0,
-      "restName": "Spain"
+      "restName": "Spain",
+      "officialName": "Kingdom of Spain",
+      "cca2": "ES",
+      "cca3": "ESP",
+      "fifa": "",
+      "altSpellings": [
+        "ES",
+        "Kingdom of Spain",
+        "Reino de España"
+      ]
     },
     {
       "name": "Sri Lanka",
@@ -2722,7 +5700,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Southern Asia",
       "lat": 7.0,
       "lng": 81.0,
-      "restName": "Sri Lanka"
+      "restName": "Sri Lanka",
+      "officialName": "Democratic Socialist Republic of Sri Lanka",
+      "cca2": "LK",
+      "cca3": "LKA",
+      "fifa": "",
+      "altSpellings": [
+        "LK",
+        "ilaṅkai",
+        "Democratic Socialist Republic of Sri Lanka"
+      ]
     },
     {
       "name": "Sudan",
@@ -2744,29 +5731,49 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Africa",
       "lat": 15.0,
       "lng": 30.0,
-      "restName": "Sudan"
+      "restName": "Sudan",
+      "officialName": "Republic of the Sudan",
+      "cca2": "SD",
+      "cca3": "SDN",
+      "fifa": "",
+      "altSpellings": [
+        "SD",
+        "Republic of the Sudan",
+        "Jumhūrīyat as-Sūdān"
+      ]
     },
     {
       "name": "Suriname",
       "iso": "SUR",
-      "year": 2022,
-      "generationTwh": 2.1,
+      "year": 2024,
+      "generationTwh": 1.7,
       "mix": {
         "coal": 0.0,
-        "gas": 0.9,
-        "oil": 54.5,
+        "gas": 1.1,
+        "oil": 46.0,
         "nuclear": 0.0,
-        "hydro": 43.6,
+        "hydro": 51.7,
         "wind": 0.0,
-        "solar": 0.5,
-        "biofuel": 0.5,
+        "solar": 0.6,
+        "biofuel": 0.6,
         "otherRenewables": 0.0
       },
       "region": "Americas",
       "subregion": "South America",
       "lat": 4.0,
       "lng": -56.0,
-      "restName": "Suriname"
+      "restName": "Suriname",
+      "officialName": "Republic of Suriname",
+      "cca2": "SR",
+      "cca3": "SUR",
+      "fifa": "",
+      "altSpellings": [
+        "SR",
+        "Sarnam",
+        "Sranangron",
+        "Republic of Suriname",
+        "Republiek Suriname"
+      ]
     },
     {
       "name": "Sweden",
@@ -2788,7 +5795,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 62.0,
       "lng": 15.0,
-      "restName": "Sweden"
+      "restName": "Sweden",
+      "officialName": "Kingdom of Sweden",
+      "cca2": "SE",
+      "cca3": "SWE",
+      "fifa": "",
+      "altSpellings": [
+        "SE",
+        "Kingdom of Sweden",
+        "Konungariket Sverige"
+      ]
     },
     {
       "name": "Switzerland",
@@ -2810,7 +5826,19 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Europe",
       "lat": 47.0,
       "lng": 8.0,
-      "restName": "Switzerland"
+      "restName": "Switzerland",
+      "officialName": "Swiss Confederation",
+      "cca2": "CH",
+      "cca3": "CHE",
+      "fifa": "",
+      "altSpellings": [
+        "CH",
+        "Swiss Confederation",
+        "Schweiz",
+        "Suisse",
+        "Svizzera",
+        "Svizra"
+      ]
     },
     {
       "name": "Syria",
@@ -2832,7 +5860,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 35.0,
       "lng": 38.0,
-      "restName": "Syria"
+      "restName": "Syria",
+      "officialName": "Syrian Arab Republic",
+      "cca2": "SY",
+      "cca3": "SYR",
+      "fifa": "",
+      "altSpellings": [
+        "SY",
+        "Syrian Arab Republic",
+        "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah"
+      ]
     },
     {
       "name": "Taiwan",
@@ -2854,7 +5891,19 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Asia",
       "lat": 23.5,
       "lng": 121.0,
-      "restName": "Taiwan"
+      "restName": "Taiwan",
+      "officialName": "Republic of China (Taiwan)",
+      "cca2": "TW",
+      "cca3": "TWN",
+      "fifa": "",
+      "altSpellings": [
+        "TW",
+        "Táiwān",
+        "Republic of China",
+        "中華民國",
+        "Zhōnghuá Mínguó",
+        "Chinese Taipei"
+      ]
     },
     {
       "name": "Tajikistan",
@@ -2876,7 +5925,18 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Asia",
       "lat": 39.0,
       "lng": 71.0,
-      "restName": "Tajikistan"
+      "restName": "Tajikistan",
+      "officialName": "Republic of Tajikistan",
+      "cca2": "TJ",
+      "cca3": "TJK",
+      "fifa": "",
+      "altSpellings": [
+        "TJ",
+        "Toçikiston",
+        "Republic of Tajikistan",
+        "Ҷумҳурии Тоҷикистон",
+        "Çumhuriyi Toçikiston"
+      ]
     },
     {
       "name": "Tanzania",
@@ -2898,7 +5958,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": -6.0,
       "lng": 35.0,
-      "restName": "Tanzania"
+      "restName": "Tanzania",
+      "officialName": "United Republic of Tanzania",
+      "cca2": "TZ",
+      "cca3": "TZA",
+      "fifa": "",
+      "altSpellings": [
+        "TZ",
+        "Tanzania, United Republic of",
+        "United Republic of Tanzania",
+        "Jamhuri ya Muungano wa Tanzania"
+      ]
     },
     {
       "name": "Thailand",
@@ -2920,7 +5990,80 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 15.0,
       "lng": 100.0,
-      "restName": "Thailand"
+      "restName": "Thailand",
+      "officialName": "Kingdom of Thailand",
+      "cca2": "TH",
+      "cca3": "THA",
+      "fifa": "",
+      "altSpellings": [
+        "TH",
+        "Prathet",
+        "Thai",
+        "Kingdom of Thailand",
+        "ราชอาณาจักรไทย",
+        "Ratcha Anachak Thai"
+      ]
+    },
+    {
+      "name": "Togo",
+      "iso": "TGO",
+      "year": 2024,
+      "generationTwh": 0.7,
+      "mix": {
+        "coal": 0.0,
+        "gas": 70.4,
+        "oil": 0.0,
+        "nuclear": 0.0,
+        "hydro": 11.3,
+        "wind": 0.0,
+        "solar": 18.3,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "lat": 8.0,
+      "lng": 1.16666666,
+      "restName": "Togo",
+      "officialName": "Togolese Republic",
+      "cca2": "TG",
+      "cca3": "TGO",
+      "fifa": "",
+      "altSpellings": [
+        "TG",
+        "Togolese",
+        "Togolese Republic",
+        "République Togolaise"
+      ]
+    },
+    {
+      "name": "Tonga",
+      "iso": "TON",
+      "year": 2024,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 85.7,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 14.3,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "lat": -20.0,
+      "lng": -175.0,
+      "restName": "Tonga",
+      "officialName": "Kingdom of Tonga",
+      "cca2": "TO",
+      "cca3": "TON",
+      "fifa": "",
+      "altSpellings": [
+        "TO"
+      ]
     },
     {
       "name": "Trinidad and Tobago",
@@ -2942,7 +6085,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Caribbean",
       "lat": 11.0,
       "lng": -61.0,
-      "restName": "Trinidad and Tobago"
+      "restName": "Trinidad and Tobago",
+      "officialName": "Republic of Trinidad and Tobago",
+      "cca2": "TT",
+      "cca3": "TTO",
+      "fifa": "",
+      "altSpellings": [
+        "TT",
+        "Republic of Trinidad and Tobago"
+      ]
     },
     {
       "name": "Tunisia",
@@ -2964,7 +6115,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Africa",
       "lat": 34.0,
       "lng": 9.0,
-      "restName": "Tunisia"
+      "restName": "Tunisia",
+      "officialName": "Tunisian Republic",
+      "cca2": "TN",
+      "cca3": "TUN",
+      "fifa": "",
+      "altSpellings": [
+        "TN",
+        "Republic of Tunisia",
+        "al-Jumhūriyyah at-Tūnisiyyah"
+      ]
     },
     {
       "name": "Turkey",
@@ -2986,7 +6146,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 39.0,
       "lng": 35.0,
-      "restName": "Türkiye"
+      "restName": "Türkiye",
+      "officialName": "Republic of Türkiye",
+      "cca2": "TR",
+      "cca3": "TUR",
+      "fifa": "",
+      "altSpellings": [
+        "TR",
+        "Turkiye",
+        "Republic of Turkey",
+        "Türkiye Cumhuriyeti"
+      ]
     },
     {
       "name": "Turkmenistan",
@@ -3008,7 +6178,43 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Asia",
       "lat": 40.0,
       "lng": 60.0,
-      "restName": "Turkmenistan"
+      "restName": "Turkmenistan",
+      "officialName": "Turkmenistan",
+      "cca2": "TM",
+      "cca3": "TKM",
+      "fifa": "",
+      "altSpellings": [
+        "TM"
+      ]
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "iso": "TCA",
+      "year": 2024,
+      "generationTwh": 0.3,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 96.3,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 3.7,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 21.75,
+      "lng": -71.58333333,
+      "restName": "Turks and Caicos Islands",
+      "officialName": "Turks and Caicos Islands",
+      "cca2": "TC",
+      "cca3": "TCA",
+      "fifa": "",
+      "altSpellings": [
+        "TC"
+      ]
     },
     {
       "name": "Uganda",
@@ -3030,7 +6236,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": 1.0,
       "lng": 32.0,
-      "restName": "Uganda"
+      "restName": "Uganda",
+      "officialName": "Republic of Uganda",
+      "cca2": "UG",
+      "cca3": "UGA",
+      "fifa": "",
+      "altSpellings": [
+        "UG",
+        "Republic of Uganda",
+        "Jamhuri ya Uganda"
+      ]
     },
     {
       "name": "Ukraine",
@@ -3052,7 +6267,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Europe",
       "lat": 49.0,
       "lng": 32.0,
-      "restName": "Ukraine"
+      "restName": "Ukraine",
+      "officialName": "Ukraine",
+      "cca2": "UA",
+      "cca3": "UKR",
+      "fifa": "",
+      "altSpellings": [
+        "UA",
+        "Ukrayina"
+      ]
     },
     {
       "name": "United Arab Emirates",
@@ -3074,7 +6297,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 24.0,
       "lng": 54.0,
-      "restName": "United Arab Emirates"
+      "restName": "United Arab Emirates",
+      "officialName": "United Arab Emirates",
+      "cca2": "AE",
+      "cca3": "ARE",
+      "fifa": "",
+      "altSpellings": [
+        "AE",
+        "UAE",
+        "Emirates"
+      ]
     },
     {
       "name": "United Kingdom",
@@ -3096,7 +6328,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Northern Europe",
       "lat": 54.0,
       "lng": -2.0,
-      "restName": "United Kingdom"
+      "restName": "United Kingdom",
+      "officialName": "United Kingdom of Great Britain and Northern Ireland",
+      "cca2": "GB",
+      "cca3": "GBR",
+      "fifa": "",
+      "altSpellings": [
+        "GB",
+        "UK",
+        "Great Britain"
+      ]
     },
     {
       "name": "United States",
@@ -3118,7 +6359,46 @@ window.ENERGY_MIX_DATA = {
       "subregion": "North America",
       "lat": 38.0,
       "lng": -97.0,
-      "restName": "United States"
+      "restName": "United States",
+      "officialName": "United States of America",
+      "cca2": "US",
+      "cca3": "USA",
+      "fifa": "",
+      "altSpellings": [
+        "US",
+        "USA",
+        "United States of America"
+      ]
+    },
+    {
+      "name": "United States Virgin Islands",
+      "iso": "VIR",
+      "year": 2023,
+      "generationTwh": 0.7,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 97.1,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 2.9,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "lat": 18.35,
+      "lng": -64.933333,
+      "restName": "United States Virgin Islands",
+      "officialName": "Virgin Islands of the United States",
+      "cca2": "VI",
+      "cca3": "VIR",
+      "fifa": "",
+      "altSpellings": [
+        "VI",
+        "Virgin Islands, U.S."
+      ]
     },
     {
       "name": "Uruguay",
@@ -3140,7 +6420,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": -33.0,
       "lng": -56.0,
-      "restName": "Uruguay"
+      "restName": "Uruguay",
+      "officialName": "Oriental Republic of Uruguay",
+      "cca2": "UY",
+      "cca3": "URY",
+      "fifa": "",
+      "altSpellings": [
+        "UY",
+        "Oriental Republic of Uruguay",
+        "República Oriental del Uruguay"
+      ]
     },
     {
       "name": "Uzbekistan",
@@ -3162,7 +6451,49 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Central Asia",
       "lat": 41.0,
       "lng": 64.0,
-      "restName": "Uzbekistan"
+      "restName": "Uzbekistan",
+      "officialName": "Republic of Uzbekistan",
+      "cca2": "UZ",
+      "cca3": "UZB",
+      "fifa": "",
+      "altSpellings": [
+        "UZ",
+        "Republic of Uzbekistan",
+        "O‘zbekiston Respublikasi",
+        "Ўзбекистон Республикаси"
+      ]
+    },
+    {
+      "name": "Vanuatu",
+      "iso": "VUT",
+      "year": 2023,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 75.0,
+        "nuclear": 0.0,
+        "hydro": 12.5,
+        "wind": 0.0,
+        "solar": 12.5,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "lat": -16.0,
+      "lng": 167.0,
+      "restName": "Vanuatu",
+      "officialName": "Republic of Vanuatu",
+      "cca2": "VU",
+      "cca3": "VUT",
+      "fifa": "",
+      "altSpellings": [
+        "VU",
+        "Republic of Vanuatu",
+        "Ripablik blong Vanuatu",
+        "République de Vanuatu"
+      ]
     },
     {
       "name": "Venezuela",
@@ -3184,7 +6515,17 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South America",
       "lat": 8.0,
       "lng": -66.0,
-      "restName": "Venezuela"
+      "restName": "Venezuela",
+      "officialName": "Bolivarian Republic of Venezuela",
+      "cca2": "VE",
+      "cca3": "VEN",
+      "fifa": "",
+      "altSpellings": [
+        "VE",
+        "Bolivarian Republic of Venezuela",
+        "Venezuela, Bolivarian Republic of",
+        "República Bolivariana de Venezuela"
+      ]
     },
     {
       "name": "Vietnam",
@@ -3206,7 +6547,47 @@ window.ENERGY_MIX_DATA = {
       "subregion": "South-Eastern Asia",
       "lat": 16.16666666,
       "lng": 107.83333333,
-      "restName": "Vietnam"
+      "restName": "Vietnam",
+      "officialName": "Socialist Republic of Vietnam",
+      "cca2": "VN",
+      "cca3": "VNM",
+      "fifa": "",
+      "altSpellings": [
+        "VN",
+        "Socialist Republic of Vietnam",
+        "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+        "Viet Nam"
+      ]
+    },
+    {
+      "name": "Western Sahara",
+      "iso": "ESH",
+      "year": 2009,
+      "generationTwh": 0.1,
+      "mix": {
+        "coal": 0.0,
+        "gas": 0.0,
+        "oil": 100.0,
+        "nuclear": 0.0,
+        "hydro": 0.0,
+        "wind": 0.0,
+        "solar": 0.0,
+        "biofuel": 0.0,
+        "otherRenewables": 0.0
+      },
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "lat": 24.5,
+      "lng": -13.0,
+      "restName": "Western Sahara",
+      "officialName": "Sahrawi Arab Democratic Republic",
+      "cca2": "EH",
+      "cca3": "ESH",
+      "fifa": "",
+      "altSpellings": [
+        "EH",
+        "Taneẓroft Tutrimt"
+      ]
     },
     {
       "name": "Yemen",
@@ -3228,7 +6609,16 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Western Asia",
       "lat": 15.0,
       "lng": 48.0,
-      "restName": "Yemen"
+      "restName": "Yemen",
+      "officialName": "Republic of Yemen",
+      "cca2": "YE",
+      "cca3": "YEM",
+      "fifa": "",
+      "altSpellings": [
+        "YE",
+        "Yemeni Republic",
+        "al-Jumhūriyyah al-Yamaniyyah"
+      ]
     },
     {
       "name": "Zambia",
@@ -3250,7 +6640,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": -15.0,
       "lng": 30.0,
-      "restName": "Zambia"
+      "restName": "Zambia",
+      "officialName": "Republic of Zambia",
+      "cca2": "ZM",
+      "cca3": "ZMB",
+      "fifa": "",
+      "altSpellings": [
+        "ZM",
+        "Republic of Zambia"
+      ]
     },
     {
       "name": "Zimbabwe",
@@ -3272,7 +6670,15 @@ window.ENERGY_MIX_DATA = {
       "subregion": "Eastern Africa",
       "lat": -20.0,
       "lng": 30.0,
-      "restName": "Zimbabwe"
+      "restName": "Zimbabwe",
+      "officialName": "Republic of Zimbabwe",
+      "cca2": "ZW",
+      "cca3": "ZWE",
+      "fifa": "",
+      "altSpellings": [
+        "ZW",
+        "Republic of Zimbabwe"
+      ]
     }
   ]
 };

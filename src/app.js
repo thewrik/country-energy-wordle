@@ -1,5 +1,5 @@
-import { createGuessGame } from "../vendor/country-guess-kit/core.mjs";
-import { $, populateDatalist, bindGuessForm, setDisabled } from "../vendor/country-guess-kit/dom.mjs";
+import { countryAliases, createGuessGame } from "../vendor/country-guess-kit/core.mjs";
+import { $, bindGuessForm, setDisabled } from "../vendor/country-guess-kit/dom.mjs";
 import { compassDirection, haversineKm } from "../vendor/country-guess-kit/geo.mjs";
 import { LABELS, CATEGORIES, topMixEntries, cleanShare, fossilShare, pickCountriesForTier, tierForCountry, energyContext, formatTwh, mixDistance, similarityBadge } from "./game_logic.mjs";
 
@@ -119,7 +119,7 @@ function start(random = false) {
       items: DATA.countries,
       maxGuesses: MAX_GUESSES,
       getId: c => c.iso,
-      aliases: c => [c.name, c.iso, c.restName].filter(Boolean),
+      aliases: c => countryAliases(c),
       evaluateGuess: ({ guess, target }) => ({
         mixDistance: mixDistance(guess, target),
         geoKm: haversineKm(guess, target),
@@ -138,9 +138,14 @@ function start(random = false) {
   renderBoard();
 }
 
+function populateCountryList() {
+  const values = [...new Set(DATA.countries.flatMap(countryAliases))].sort((a, b) => a.localeCompare(b));
+  $("country-list").innerHTML = values.map(v => `<option value="${v.replaceAll('"', '&quot;')}"></option>`).join("");
+}
+
 function init() {
   DATA.countries.forEach(c => c.tier = tierForCountry(c));
-  populateDatalist($("country-list"), DATA.countries);
+  populateCountryList();
   renderTierCounts();
   bindGuessForm({ input: $("guess-input"), button: $("guess-button"), onSubmit: submitGuess });
   $("new-game").addEventListener("click", () => start(true));

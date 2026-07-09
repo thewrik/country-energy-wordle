@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { compassDirection } from "../vendor/country-guess-kit/geo.mjs";
+import { countryAliases } from "../vendor/country-guess-kit/core.mjs";
 import { tierForCountry, pickCountriesForTier, energyContext, topMixEntries, mixDistance, similarityBadge } from "../src/game_logic.mjs";
 
 const cats = ["coal", "gas", "oil", "nuclear", "hydro", "wind", "solar", "biofuel", "otherRenewables"];
@@ -20,6 +21,8 @@ const country = (overrides) => ({
 assert.equal(compassDirection(country({ lat: 0, lng: 0 }), country({ lat: 10, lng: 10 })).label, "northeast");
 assert.equal(compassDirection(country({ lat: 5, lng: 5 }), country({ lat: 5.4, lng: 5.5 })).label, "nearby");
 assert.equal(compassDirection(country({ lat: 10, lng: 0 }), country({ lat: 0, lng: -10 })).arrow, "↙");
+assert.equal(countryAliases({ name: "United States", iso: "USA" }).includes("U.S.A."), true);
+assert.equal(countryAliases({ name: "Turkey" }).includes("Türkiye"), true);
 
 const easy = country({ name: "United States", iso: "USA", generationTwh: 4300 });
 const surprise = country({ name: "Hidden Hydro Island", iso: "HHI", generationTwh: 2.3 });

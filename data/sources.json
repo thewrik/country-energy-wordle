@@ -2,5 +2,5 @@
   "energy": "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
   "geography": "https://raw.githubusercontent.com/mledoze/countries/master/countries.json",
   "note": "Latest available electricity-generation source shares per country from OWID energy data; geography from REST Countries. Shares normalized to 100% for gameplay.",
-  "minGenerationTwh": 2.0
+  "minGenerationTwh": 0.0
 }
